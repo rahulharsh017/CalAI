@@ -431,6 +431,7 @@ top: 40px;
     position: relative;
     width: 85%;
     font-size: 3vw;
+    top: 8%;
     left: 7%;
     color: #17114D;
     font-weight: 900;
@@ -588,9 +589,9 @@ top: 40px;
 
 #page7>h2{
     position: relative;
-    top: 10%;
-    left: 15%;
-    font-size: 2vw;
+    top: -10%;
+    left: 10%;
+    font-size: 4vw;
     font-weight: 100;
 }
 #testimonial{
@@ -598,10 +599,10 @@ top: 40px;
     height: 70vh;
     width: 80vw;
     /* background-color: red; */
-    top: 25%;
-    left: 15%;
+    top: 0%;
+    left: 10%;
     display: flex;
-    gap: 3vw;
+    gap: 8vw;
 }
 
 .testi-content{
