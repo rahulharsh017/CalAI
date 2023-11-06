@@ -366,7 +366,7 @@ top: 40px;
 
 @media (max-width:600px) {
     #page3{
-        height: 175vh;
+        height: 172vh;
     }
     #page3>button{
         height: 20vw;
@@ -431,7 +431,7 @@ top: 40px;
     position: relative;
     width: 85%;
     font-size: 3vw;
-    top: 8%;
+    top: 2%;
     left: 7%;
     color: #17114D;
     font-weight: 900;
@@ -503,7 +503,7 @@ top: 40px;
 }
 
 
-#page6{
+#page5{
     height: 100vh;
     width: 100vw;
      background: linear-gradient(to bottom,#7B7B7B,#FFFFFF);
@@ -511,7 +511,7 @@ top: 40px;
      position: relative;
      gap: 20vw;
 }
-#page6-con1{
+#page5-con1{
     height: 60vh;
     width: 60vh;
     background-color: rgba(0, 0, 0, 0.66);
@@ -525,13 +525,13 @@ top: 40px;
     border: 4px solid #7C7C7C;
 }
 
-#page6-con1>h2{
+#page5-con1>h2{
     position: relative;
     left: 4%;
     color: #FF4D00;
     font-weight: 700;
 }
-#page6-con1>ul{
+#page5-con1>ul{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -541,7 +541,7 @@ top: 40px;
     color: #FFFFFF;
 }
 
-#page6-con1>button{
+#page5-con1>button{
     position: relative;
     left: 4%;
     height: 4vw;
@@ -551,28 +551,28 @@ top: 40px;
     background-color: black;
     border: 3px solid #A3A3A3;
 }
-#page6>img{
+#page5>img{
     height: 35vw;
 }
 @media (max-width:600px) {
-    #page6{
+    #page5{
         flex-direction: column;
         gap: 10vw;
         height: 100vh;
     }
-    #page6-con1{
+    #page5-con1{
         left: 5%;
         width: 90vw;
         height: 70vw;
         top: -1%;
     }
-    #page6>img{
+    #page5>img{
         margin-bottom: 8vw;
         margin-left: 5vw;
         width: 90vw;
         height: 50vh;
     }
-    #page6-con1>button{
+    #page5-con1>button{
         left: 8%;
         height: 10vw;
         width: 40vw;
@@ -581,13 +581,13 @@ top: 40px;
     
 }
 
-#page7{
+#page6{
     height: 100vh;
     width: 100vw;
     background: linear-gradient(to bottom,#FFFFFF,#7B7B7B);
 }
 
-#page7>h2{
+#page6>h2{
     position: relative;
     top: -10%;
     left: 10%;
@@ -648,10 +648,10 @@ top: 40px;
     font-size: 1vw;
 }
 @media (max-width:600px) {
-    #page7{
+    #page6{
         height: 100vh;
     }
-    #page7>h2{
+    #page6>h2{
        top: -8%;
         font-size: 7vw;
         left: 5%;
