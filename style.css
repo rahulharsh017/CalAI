@@ -431,7 +431,7 @@ top: 40px;
     position: relative;
     width: 85%;
     font-size: 3vw;
-    top: 2%;
+    top: 5%;
     left: 7%;
     color: #17114D;
     font-weight: 900;
@@ -478,8 +478,11 @@ top: 40px;
     }
     #page4>h1{
         font-size: 8vw;
+        top: 3%;
+        left: 8%;
     }
     .page4-content{
+        left: -2%;
         top: 3%;
         flex-direction: column;
     }
@@ -600,7 +603,7 @@ top: 40px;
     width: 80vw;
     /* background-color: red; */
     top: 0%;
-    left: 10%;
+    left: 15%;
     display: flex;
     gap: 8vw;
 }
