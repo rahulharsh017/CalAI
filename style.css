@@ -242,7 +242,7 @@ top: -50%;
 
 @media (max-width: 600px) {
     #page2 {
-        height: 80vh;
+        height: 180vw;
         width: 100%;
         left: 0;
     }
@@ -366,7 +366,7 @@ top: 40px;
 
 @media (max-width:600px) {
     #page3{
-        height: 172vh;
+        height: 400vw;
     }
     #page3>button{
         height: 20vw;
@@ -376,13 +376,13 @@ top: 40px;
         left: 10%;
 }
 #page3-content{
-    height: 100vh;
+    height: 100vw;
     width: 100vw;
     top: -12%;
     left: 0%;
 }
 .course{
-    height: 130vw;
+    height: 135vw;
     width: 90vw;
 }
 .course>img{
@@ -474,7 +474,7 @@ top: 40px;
 }
 @media (max-width:600px){
     #page4{
-        height: 140vh;
+        height: 320vw;
     }
     #page4>h1{
         font-size: 8vw;
@@ -561,7 +561,7 @@ top: 40px;
     #page5{
         flex-direction: column;
         gap: 10vw;
-        height: 100vh;
+        height: 180vw;
     }
     #page5-con1{
         left: 5%;
@@ -652,7 +652,7 @@ top: 40px;
 }
 @media (max-width:600px) {
     #page6{
-        height: 100vh;
+        height: 220vw;
     }
     #page6>h2{
        top: -8%;
