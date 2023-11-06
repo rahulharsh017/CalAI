@@ -561,12 +561,12 @@ top: 40px;
     #page5{
         flex-direction: column;
         gap: 10vw;
-        height: 180vw;
+        height: 190vw;
     }
     #page5-con1{
         left: 5%;
         width: 90vw;
-        height: 70vw;
+        height: 100vw;
         top: -1%;
     }
     #page5>img{
@@ -652,19 +652,18 @@ top: 40px;
 }
 @media (max-width:600px) {
     #page6{
-        height: 220vw;
+        height: 270vw;
     }
     #page6>h2{
-       top: -8%;
+        top: 5%;
         font-size: 7vw;
         left: 5%;
     }
     #testimonial{
-        top: 5%;
+        top: 10%;
         flex-direction: column;
     }
     .testi-content{
-        top: -15%;
         left: -12%;
         width: 90vw;
     }
@@ -738,7 +737,7 @@ footer{
 @media (max-width:600px) {
     footer{
         width: 100vw;
-        height: 80vh;
+        height: 80vh7
     }
     
 }
