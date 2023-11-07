@@ -88,9 +88,9 @@ body{
 @media (max-width: 600px) {
     #nav {
         width: 100vw;
-        left: -5%;
-        gap: 55vw;
-        margin-left: 2%;
+        left: 0%;
+        gap: 58vw;
+        justify-content: start;
     }
     #nav>img{
         height: 60px;
