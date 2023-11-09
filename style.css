@@ -155,7 +155,7 @@ top: -50%;
     padding-left: 5vw;
     font-size: 3vw;
 }
-#page1>button{
+#page1>a>button{
     position: relative;
     height: 5vw;
     width: 20vw;
@@ -168,7 +168,7 @@ top: -50%;
     z-index: 5;
 }
 
-#page1>button:hover{
+#page1>a>button:hover{
     background-color: black;
     scale: 120%;
     transition: all 0.5sec ease-in;
@@ -189,13 +189,13 @@ top: -50%;
     #content>img{
         height: 15vw;
     }
-    #page1>button{
+    #page1>a>button{
         height: 15vw;
         width: 50vw;
         font-size: 5vw;
         left: 25%;
     }
-    #page1>button:hover{
+    #page1>a>button:hover{
         background-color: black;
         scale: 120%;
         transition: all 0.5sec ease-in;
