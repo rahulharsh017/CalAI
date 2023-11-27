@@ -204,7 +204,7 @@ top: -50%;
 #page2
 {
     position: relative;
-    height: 70vh;
+    height: 53vh;
     width: 100vw;
     background: linear-gradient(to bottom,#FFFFFF,#7B7B7B);
 }
@@ -516,10 +516,10 @@ top: 40px;
 }
 #page5-con1{
     height: 60vh;
-    width: 60vh;
+    width: 30vw;
     background-color: rgba(0, 0, 0, 0.66);
     position: relative;
-    top: 12%;
+    top: 1.5vw;
     left: 10%;
     padding-left: 2vw;
     display: flex;
@@ -555,7 +555,9 @@ top: 40px;
     border: 3px solid #A3A3A3;
 }
 #page5>img{
+    position: relative;
     height: 35vw;
+    top: 1.5vw;
 }
 @media (max-width:600px) {
     #page5{
