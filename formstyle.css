@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif;
+}
+
+html.body{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+   /* background-image: url(Cal\ AI\ banner.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: center; */
+    overflow-x: hidden;
+
+}
+
+#nav{
+    height: 100px;
+    width: 50%;
+     background-color: black; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    left: 27%;
+    margin-top: -10px;
+    position: relative;
+    position: fixed;
+    z-index: 8;
+}
+
+#nav>img{
+    height: 60px;
+}
+
+#nav>a{
+    color: white;
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 1.2vw;
+}
+#nav>#menu{
+    height: 30px;
+    display: none;
+}
+
+#container{
+    height: 100vh;
+    width: 100vw;
+}
+
+#main{
+    height: 38vw;
+    width: 30vw;
+    background-color:black ;
+    position: relative;
+    top: 16%;
+    left: 38%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#main>h2{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 5%;
+}
+
+#main>input{
+    height: 2vw;
+    width: 25vw;
+    position: relative;
+    left: 8%;
+    top: 10%;
+}
+#main>label{
+    color: white;
+    position: relative;
+    top: 10%;
+    left: 8%;
+}
+#main>select{
+    height: 2vw;
+    width: 25vw;
+    position: relative;
+    left: 8%;
+    top: 10%;
+}
+
+#main>button{
+    height: 2vw;
+    width: 15vw;
+    position: relative;
+    left: 25%;
+    top: 15%;
+    font-weight: 900;
+
+}
