@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll to Different Sections</title>
+    <style>
+        /* Add some styles to create sections with heights for demonstration purposes */
+        section {
+            height: 500px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="section1">
+        <h2>Section 1</h2>
+        <p>This is the first section.</p>
+        <a href="#section2">Scroll to Section 2</a>
+    </section>
+
+    <section id="section2">
+        <h2>Section 2</h2>
+        <p>This is the second section.</p>
+        <a href="#section3">Scroll to Section 3</a>
+    </section>
+
+    <section id="section3">
+        <h2>Section 3</h2>
+        <p>This is the third section.</p>
+    </section>
+
+    <script>
+        // Use JavaScript to handle smooth scrolling when clicking on anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
