@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="formstyle.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="nav">
+        <img src="CalAi logo.svg" alt="" />
+        <a href="Home">Home</a>
+        <a href="Certications">Certications</a>
+        <a href="About">About</a>
+        <a href="Contact">Contact</a>
+        <img id="menu" src="menu-line.svg" alt="" />
+      </div>
+      <div id="main">
+        <h2>Register Here</h2>
+        <label for="name">Name*</label>
+        <input type="text" id="name" placeholder="Enter your Full Name" />
+        <br />
+        <label for="email">Email*</label>
+        <input type="text" id="email" placeholder="Enter Your Email" />
+        <br />
+        <label for="number">Number*</label>
+        <input type="tel" id="phoneNumber" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter phone number" required>
+        <br />
+        <label for="country">Country*</label>
+        <input type="text" id="country" placeholder="Enter Your country" />
+        <br />
+        <label for="Course">Course*</label>
+        <select name="Course" id="Course" aria-placeholder="Course">
+          <option value="Certified AI Transformation Leader (CAITL™)">
+            Certified AI Transformation Leader (CAITL™)
+          </option>
+          <option value="Certified Artificial Intelligence Scientist (CAIS™)">
+            Certified Artificial Intelligence Scientist (CAIS™)
+          </option>
+          <option value="Certified Artificial Intelligence Consultant (CAIC™)">
+            Certified Artificial Intelligence Consultant (CAIC™)
+          </option>
+        </select>
+        <button>Submit</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
