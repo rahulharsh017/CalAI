@@ -36,14 +36,36 @@ body{
 }
 #header{
     width: 100vw;
-    height: 5vw;
+    height: 7vw;
     background-color: white;
     position: relative;
     display: flex;
     flex-direction: row;
-    gap: 60vw;
+    gap: 15vw;
     padding-left: 2vw;
 
+}
+#banner{
+    display: flex;
+
+}
+#banner>img{
+    position: relative;
+    top: -10%;
+    height: 8vw;
+}
+#banner>#line{
+    top: 5%;
+    position: relative;
+    height: 6vw;
+}
+#banner>p{
+    font-size: 2vw;
+    font-weight: 900;
+    position: relative;
+    left: 3%;
+    top: 30%;
+    color: #020C7B;
 }
 #email{
     display: flex;
@@ -57,8 +79,9 @@ body{
     position: relative;
 }
 #email>img{
-    height: 40px;
+    height: 30px;
     position: relative;
+    top: 4%;
 }
 #nav{
     height: 70px;
@@ -67,7 +90,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 100px;
     position: relative;
     top: 10%;
     z-index: 200;
@@ -81,7 +104,7 @@ body{
     color: white;
     font-weight: 100;
     text-decoration: none;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 #nav>#menu{
     height: 30px;
@@ -97,16 +120,37 @@ body{
     justify-content: center;
     gap: 80px;
 }
+
 #offer>p{
     font-size: 1.5vw;
     font-weight: 900;
 }
-#offer>button{
-    height: 2vw;
-    width: 10vw;
-    font-weight: 900;
-    box-shadow: 5px 5px black;
+#offer>a>button{
+    height: 3vw;
+    width: 15vw;
+    font-size: 1.5vw;
+    font-weight: bolder;
     border: 2px solid black;
+    animation: blink 1.5s steps(1,end) infinite;
+}
+@media (min-width: 1280px){
+    #menu-line{
+        display: none;
+    }
+    #m-testimonials{
+        display: none;
+    }
+}
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 /* #account
@@ -134,35 +178,78 @@ body{
 
 } */
 
-@media (max-width: 600px) {
-    #nav {
-        width: 100vw;
-        left: 0%;
-        gap: 58vw;
-        justify-content: start;
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
     }
-    #nav>img{
-        height: 60px;
-    }
-    #nav>a{
+    #nav{
         display: none;
-    }
-    #nav>#menu{
-        display: block;
     }
     #header{
-        display: none;
+        height: 8vh;
+        gap: 2vw;
     }
-    #offer{
-        display: none;
+    #banner>#logo{
+        height: 8vh;
+        width: 20vw;
+        padding-top: 2vh;
     }
+    #banner>#line{
+        height: 7vh;
+        padding-top: 1vh;
+        
+    }
+    #banner>p{
+        font-size: 3vw;
+    }
+    #email{
+        display: flex;
+        flex-direction: column;
+        padding-right: 5vw;
+        gap: 0.5vh;
+        padding-bottom: 5vh;
+    }
+    #email>img{
+        height: 2vh;
+    }
+    #h-email{
+        display: none;
+}
+#email>#info{
+    font-size: 1.5vh;
+    padding-bottom: 5vh;
+}
+#offer{
+    height: 5vh;
+    gap: 1vw;
 }
 
+#menu-line{
+    display: inline;
+    position: relative;
+    width: 8vw;
+    height: 5vh;
+    left: 2%;
+}
+#offer>p{
+    position: relative;
+    font-size: 2.5vw;
+    left: 5%;
+}
+#offer>a>button{
+    position: relative;
+    animation: none;
+    height: 3.5vh;
+    width: 25vw;
+    font-size: 3vw;
+    background-color: black;
+    color: white;
+    left: -5%;
+    animation: blink 1.5s steps(1,end) infinite;
+}
+}
  
-/* Media Query for Large Screens (e.g., desktop) */
 
-  
-    /* Adjust other styles for even larger screens */
 
 #main{
     position: relative;
@@ -191,7 +278,7 @@ top: -50%;
     position: relative;
     height: 250px;
     width: 55%;
-    top: 20%;
+    top: 25%;
     /* background-color: red; */
     display: flex;
     gap: 25px;
@@ -214,14 +301,13 @@ top: -50%;
     position: relative;
     height: 5vw;
     width: 20vw;
-    top: 22%;
+    top: 25%;
     left: 35%;
     background-color: rgb(43, 42, 42);
     color: white;
     border: 4px solid rgb(0, 0, 0);
     font-size: 1.5vw;
     z-index: 5;
-    box-shadow: 5px 5px black;
 }
 
 #page1>a>button:hover{
@@ -229,52 +315,199 @@ top: -50%;
     scale: 120%;
     transition: all 0.5sec ease-in;
 }
-@media (max-width: 600px) {
-    #page1 {
-        width: 100%;
-        left: 0;
+@media (max-width: 768px) {
+    #page1{
+        display: none;
     }
+    #m-page1{
+        padding-top: 2vh;
+        height: 40vh;
+        background-image: url(Cal\ AI\ banner.png);
+        background-size: cover;
+        background-position-y: center;
+    }
+    #m-overlay{
+        position: relative;
+        top: -50%;
+            background-color: rgb(0,0, 0,0.40);
+            height: 42vh;
+        }
     #content{
-        left: 25%;
-        gap: 15vw;
+        flex-direction: column;
+        z-index: 10;
+        gap: 1vh;
+        height: 10vh;
+        width: 80vw;
+        gap: 5vh;
+        padding-top: 15vh;
+        position: relative;
+        left: 8%;
     }
     #content>h1{
-        font-size: 5vw;
+        text-align: center;
+        font-size: 2vh;
+    }
+    #content>a>button{
+        z-index: 10;
+        background-color: black;
+        color: white;
+        width: 40vw;
+height: 3vh;
+position: relative;
+left: 5%;
+    }
+    #m-course{
+        height: 55vh;
+        width: 100%;
+        padding: 2vh;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    #m-course>h1{
+        text-align: center;
+        color: #07126E;
+    }
+    #m-des{
+        display: flex;
+        flex-direction: column;
+    }
+    #m-content{
+        position: relative;
+        display: flex;
+        top: 5%;
+        height: 10vh;
+    }
+    #m-content>img{
+        position: relative;
+        left: -2%;
+height: 10vh;
+    }
+    #m-content>a>button{
+        position: relative;
+        width: 40vw;
+        height: 5vh;
+        top: 10%;
+        font-weight: 900;
+        background-color: #D0A54C;
+        border: none;
+    }
+    #m-des>h2{
+        width: 55vw;
+        font-size: 2.2vh;
+        color: #07126E;
+    }
+    #m-des>p{
+        font-size: 1.5vh;
+    }
+    #m-course>button{
+        position: relative;
+        top: 5%;
+        height: 5vh;
+        width: 60vw;
+        font-size: 2vh;
+        font-weight: bolder;
+        background-color: #07126E;
+        color: white;
+        border: none;
+        left: 20%;
+    }
+    #m-image-slider{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        gap: 2vh;
+        overflow-x: hidden;
+        height: 16vh;
         width: 100%;
     }
-    #content>img{
-        height: 15vw;
+    #m-image-slider>h2{
+font-size: 4vw;
+position: relative;
+left: 3%;
+margin-bottom: 10vw;
     }
-    #page1>a>button{
-        height: 15vw;
-        width: 50vw;
-        font-size: 5vw;
-        left: 25%;
+    #m-slider{
+        display: flex;
+        animation: slide_animation 10s infinite linear;
+        position: relative;
+        top: -15%;
     }
-    #page1>a>button:hover{
-        background-color: black;
-        scale: 120%;
-        transition: all 0.5sec ease-in;
+    #m-slide-images{
+        display: flex;
+        z-index: 5;
+        white-space: nowrap;
     }
-    #overlay{
-        height: 113.5vh;
+    #m-slide-images>img{
+        height: 5vh;
+    }
+
+    #m-testimonials{
+        width: 100%;
+        height: 55vh;
+        gap: 4vw;
+        display: flex;
+        flex-direction: column;
+        padding: 2vw;
+    }
+    #m-testimonials>h3{
+        padding-left: 3vw;
+    }
+    .m-testi-content{
+        display: flex;
+        width: 100%;
+        padding: 4vw;
+        border: 1px solid black;
+        gap: 3vw;
+    }
+    .m-testi-details{
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+    .m-testi-img>img{
+        height: 20vw;
+    }
+    .m-testi-info>h3{
+        font-size: 2.8vw;
+    }
+    .m-testi-info>p{
+        font-size: 3vw;
+    }
+    .m-testi-content>P{
+        font-size: 3vw;
+        text-align: justify;
+    }
+}
+  
+
+
+@media (min-width:1280px) {
+    #m-page1{
+        display: none;
+    }
+    #m-course{
+        display: none;
+    }
+    #m-image-slider{
+        display: none;
     }
 }
 
 #page2ext{
     width: 100vw;
-    height: 15vh;
+    height: 18vh;
     background-color: white;
     display: flex;
     flex-direction: row;
-    gap: 10vw;
-    padding-left: 8vw;
+    gap: 5vw;
+    padding-left: 2vw;
 }
 #page2ext>.content{
     height: 15vh;
     width: 20vw;
     position: relative;
-    top: 0%;
+    top: 5%;
     left: 0%;
     display: flex;
     gap: 30px;
@@ -283,16 +516,32 @@ top: -50%;
     position: relative;
     top: 20%;
 }
+.descrip>h4{
+    color: #9A0000;
+    font-weight: bolder;
+}
 .content>img{
     height: 80px;
 }
-
+#payment{
+    position: relative;
+    top: 15%;
+    height: 60px;
+}
+#desktop{
+    position: relative;
+    height: 70px;
+    top: 10%;
+}
+#book{
+    height: 70px;
+}
 
 #page2
 {
     position: relative;
     display: flex;
-    height: 53vh;
+    height: 45vh;
     width: 100vw;
     background-color: #d3d3d3;
 }
@@ -316,7 +565,9 @@ top: -50%;
     top: 10%;
 }
 #page2-content>img{
-    height: 20vw;
+    position: relative;
+    top: 0;
+    height: 18vw;
 }
 #con2{
     position: relative;
@@ -327,60 +578,41 @@ top: -50%;
     font-weight: 100;
 }
 
-
-@media (max-width: 600px) {
-    #page2ext{
-        flex-direction: column;
-        height: 50vh;
-    }
-    #page2ext>.content{
-        top: 5%;
-        width: 80vw;
-    }
-    #page2 {
-        height: 70vh;
-        width: 100%;
-        left: 0;
-    }
-    #con1{
-       width: 80vw;
-        font-size: 7vw;
-    }
-    #page2-content{
-        flex-direction: column;
-        top: 0%;
-        left: 5%;
-        gap: 10vw;
-    }
-    #page2-content>img{
+@media (max-width:768px) {
+    #page2{
         display: none;
     }
-    #con2{
-        width: 90vw;
-        font-size: 5vw;
-
+    #page2ext{
+        display: none;
     }
 }
 
+
+
 #page3{
     position: relative;
-    height: 100vh;
+    height: 105vh;
     width: 100vw;
   
 }
 
-#page3>button{
+/* #page3>button{
     position: relative;
     height: 5vw;
     width: 18vw;
     font-size: 2vw;
-    background-color: rgb(4, 47, 167);
-    color: white;
-    border: 5px solid black;
+    color: rgb(0, 0, 0);
     top: 5%;
     left: 39%;
+} */
+#page3>h3{
+    font-size: 4vw;
+    font-weight: 900;
+    color: #020C7B;
+    position: relative;
+    left: 34%;
+    top: 5%;
 }
-
 #page3-content{
     height: 40vw;
     width: 80vw;
@@ -403,7 +635,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 gap: 20px;
-border: 8px solid black;
+border: 3px solid black;
 
 top: 40px;
 }
@@ -420,9 +652,9 @@ top: 40px;
     width: 10vw;
     font-size: 1.5vw;
     font-weight: bold;
-    background-color: #164dc4;
+    background-color: black;
     color: white;
-    border: 5px solid black;
+    border: 2px solid black;
 }
 
 .course>p{
@@ -455,70 +687,39 @@ top: 40px;
     color: rgb(0, 0, 0);
     font-weight: 500;
 }
-#apply{
-    width: 14vw;
+
+.applybtn{
+    position: relative;
+    top: 2%;
+}
+.apply{
+    position: relative;
+    width: 25vw;
     border: 3px solid black;
-    box-shadow: 4px 4px black;
+    text-transform: uppercase;
+    font-size: 1.4vw;
+    background-color: black;
+    color: white;
+    height: 4vw;
 }
 
-@media (max-width:600px) {
+.apply:hover{
+background-color: #ff9900;
+color: black;
+border: #ff9900;
+height: 10vh;
+font-size: 1.8vw;
+transition: all 15ms;
+}
+
+@media (max-width:768px) {
     #page3{
-        height: 150vh;
+        display: none;
     }
-    #page3>button{
-        height: 20vw;
-        width: 80vw;
-        font-size: 5vw; 
-        left: 10%;
-}
-#page3-content{
-    height: 100vw;
-    width: 100vw;
-    top: 5%;
-    left: 0%;
-}
-.course{
-    height: 135vw;
-    width: 90vw;
-}
-.course>img{
-    height: 50vw;
-}
-.course>button{
-    height: 10vw;
-    width: 40vw;
-    font-size: 6vw;
-}
-.course>p{
-    font-size: 4vw;
-    left: 0%;
-}
-
-#course-details{
-    width: 100vw;
-    left: 13%;
-}
-
-#details-con1{
-    font-size: 4vw;
-    width: 80vw;
-    left: -0%;
-    gap: 20vw;
-}
-#details-con2{
-    font-size: 3vw;
-    gap: 18vw;
-}
-#apply{
-    width: 45vw;
-    height: 5vh;
-    top: 5%;
-    left: -1%;
-}
 }
 
 #page4{
-    height: 100vh;
+    height: 75vh;
     width: 100vw;
 background-color: #d4d2d2;
 }
@@ -526,10 +727,10 @@ background-color: #d4d2d2;
 #page4>h1{
     position: relative;
     width: 85%;
-    font-size: 3vw;
+    font-size: 2.5vw;
     top: 5%;
     left: 7%;
-    color: #17114D;
+    color: #020C7B;
     font-weight: 900;
 }
 .page4-content{
@@ -537,7 +738,7 @@ background-color: #d4d2d2;
     height: 70vh;
     width: 100vw;
     /* background-color: red; */
-    top: 15%;
+    top: 8%;
     display: flex;
     gap: 2vw;
     padding-left: 7vw;
@@ -553,13 +754,13 @@ background-color: #d4d2d2;
 }
 
 .page4-tab>h3{
-    color: #FF4D00;
-    font-size: 1.5vw4
+    color: #9A0000;
+    font-size: 1.5vw;
 }
 .page4-tab>h1{
      text-decoration: underline; 
-    color: #17114D;
-    font-size: 5vw;
+    color: #020C7B;
+    font-size: 3vw;
 }
 
 .page4-tab>h2{
@@ -569,14 +770,19 @@ background-color: #d4d2d2;
 .page4-tab>p{
     font-weight: bolder;
 }
-@media (max-width:600px){
+
+#break{
+    width: 100vw;
+    height: 10vh;
+}
+@media (max-width:768px){
     #page4{
         position: relative;
         top: 10%;
-        height: 320vw;
+        height: 113vh;
     }
     #page4>h1{
-        font-size: 8vw;
+        font-size: 5vw;
         top: 3%;
         left: 8%;
     }
@@ -591,7 +797,7 @@ background-color: #d4d2d2;
         padding: 3VW;
     }
     .page4-tab>h3{
-        font-size: 5vw;
+        font-size: 4.5vw;
     }
     .page4-tab>h1{
         font-size: 12vw;
@@ -600,13 +806,18 @@ background-color: #d4d2d2;
         font-size: 4vw;
     }
     .page4-tab>p{
-        font-size: 4vw;
+        font-size: 3.5vw;
+    }
+    #break{
+        width: 100%;
+        height: 4.2vh;
     }
 }
 
 
+
 #page5{
-    height: 98vh;
+    height: 70vh;
     width: 100vw;
      background-color: #164dc4;
      display: flex;
@@ -628,7 +839,7 @@ background-color: #d4d2d2;
 #page5-con1>h2{
     font-size: 2.5vw;
     position: relative;
-    left: 4%;
+    left: 7%;
     color: #FF4D00;
     font-weight: 700;
 }
@@ -639,60 +850,64 @@ background-color: #d4d2d2;
     flex-direction: column;
     gap: 2vw;
     width: 80%;
+    top: -5%;
     left: 8%;
     color: #fdfdfd;
 }
 
-#page5-con1>button{
+#page5-con1>a>button{
     position: relative;
-    left: 8%;
+    left: 5%;
     height: 4vw;
-    width: 15vw;
-    font-size: 1.5vw;
-    color: #FF4D00;
+    width: 18vw;
+    font-size: 2vw;
+    color: #ffffff;
     background-color: rgb(48, 46, 46);
     border: 3px solid black;
-    box-shadow: 4px 4px black;
 }
 #page5>img{
     position: relative;
-    height: 35vw;
+    height: 30vw;
+    width: 45vw;
     top: 1.5vw;
 }
-@media (max-width:600px) {
+@media (max-width:768px) {
     #page5{
         flex-direction: column;
-        gap: 10vw;
-        height: 190vw;
+        height: 43vh;
+        width: 100%;
     }
     #page5-con1{
+        position: relative;
         left: 5%;
         width: 90vw;
         height: 100vw;
     }
     #page5-con1>h2{
-        font-size: 10vw;
-    }
-    #page5-con1>ul{
         font-size: 5vw;
     }
+    #page5-con1>ul{
+        position: relative;
+        font-size: 3vw;
+        top: 5%;
+    }
     #page5>img{
+        position: relative;
         margin-bottom: 8vw;
         margin-left: 5vw;
-        width: 90vw;
-        height: 50vh;
+        width: 80vw;
+        height: 60vh;
+        top: -5%;
+        padding-left: 5vw;
     }
-    #page5-con1>button{
-        left: 8%;
-        height: 10vw;
-        width: 40vw;
-        font-size: 4vw;
-        top: 5%;    }
+    #page5-con1>a>button{
+    display: none;  
+    }
     
 }
 
 #page6{
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     background-color: rgb(255, 255, 255);
 }
@@ -700,20 +915,20 @@ background-color: #d4d2d2;
 #page6>h2{
     position: relative;
     top: 5%;
-    left: 14%;
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 100;
     color: #164dc4;
+    padding-left: 1vw;
 }
 #testimonial{
     position: relative;
     height: 70vh;
-    width: 80vw;
+    width: 70vw;
     /* background-color: red; */
-    top: 10%;
-    left: 15%;
+top: 10%;
     display: flex;
-    gap: 8vw;
+    gap: 3vw;
+    padding-left: 1vw;
 }
 
 .testi-content{
@@ -757,40 +972,10 @@ background-color: #d4d2d2;
 .testi-info>p{
     font-size: 1vw;
 }
-@media (max-width:600px) {
+@media (max-width:768px) {
     #page6{
-        height: 270vw;
-    }
-    #page6>h2{
-        top: 5%;
-        font-size: 7vw;
-        left: 5%;
-    }
-    #testimonial{
-        top: 10%;
-        flex-direction: column;
-    }
-    .testi-content{
-        left: -12%;
-        width: 90vw;
-    }
-    .testi-details{
-        gap: 4vw;
-    }
-    .testi-img>img{
-        height: 30vw;
-    }
-    .testi-info>h3{
-font-size: 6vw;
-    }
-    .testi-info>p{
-        width: 40vw;
-        font-size: 3vw;
-            }
-            .testi-content>p{
-                top: -5%;
-                font-size: 4vw;
-            }
+   display: none;
+}
 }
 
  /* #page7{
@@ -798,69 +983,138 @@ font-size: 6vw;
     width: 100vw;
     background: linear-gradient(to bottom,#7B7B7B,#FFFFFF);
 }  */
+#image-slider{
+    height: 35vh;
+    width: 100vw;
+    background-color: #164dc4;
+}
+
+#image-slider>h2{
+    color: white;
+    font-size: 2vw;
+    padding: 3vw;
+    padding-left: 8vw;
+    padding-right: 10vw;
+}
+
+#slider{
+    display: flex;
+    width: 80vw;
+    gap: 2vw;
+}
+#slide-images{
+    white-space: nowrap;
+    animation: slide_animation 20s infinite linear;
+    gap: 2vw;
+    display: flex;
+}
+#slide-images>img{
+    height: 5vw;
+}
+
+@media (max-width:600px){
+    #image-slider{
+        display: none;
+    }
+}
+
+ @keyframes slide_animation {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+    
+} 
 
 footer{
     width: 100vw;
     height: 60vh;
     background-color: black;
-}
-#foot-con1{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 2vw;
-    height: 35vh;
-    /* background-color: aliceblue; */
-    padding: 1.5vw;
-    color: #A8A8A8;
-    left: 1.5vw;
-    font-weight: 100;
-}
-.foot-con2{
-   position: relative;
-   display: flex;
-   gap: 20vw;
-   left: 3vw;
-}
-#foot-con2-1{
-    color:#A8A8A8 ;
-    line-height: 3vw;
-}
-#connect{
-    position: relative;
-    color: #A8A8A8;
     display: flex;
     flex-direction: column;
     gap: 2vw;
-    left: 8.8vw;
-}
-#connect>img{
-    position: relative;
-    left: -1vw;
-    height: 3vw;
 }
 
-@media (max-width:600px) {
+footer>h2{
+    color: white;
+    font-size: 3vw;
+    padding-top: 1vw;
+    padding-left: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+#Faq{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.fq>label{
+    color: white;
+    font-size:1.5vw;
+}
+.fq>select{
+    width: 30vw;
+    height: 5vh;
+}
+#bottom>a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+}
+#bottom{
+    position: relative;
+    display: flex;
+    gap: 12vw;
+    padding-left: 2vw;
+    top: 5%;
+}
+#bottom>a>img{
+    position: relative;
+    top: -10%;
+    height: 50px;
+}
+
+footer>p{
+    position: relative;
+    top: 5%;
+    color: white;
+}
+@media (max-width:768px) {
     footer{
-        width: 100vw;
-        height: 80vw;
+        width: 100%;
+        height: 58vh;
     }
-    #foot-con1{
-        font-size: 3vw;
-        height: 50vw;
-        width: 70vw;
-    }
-    #foot-con2-1{
-        font-size: 3vw;
-        line-height: 5.5vw;
-    }
-    #connect{
-        font-size: 3vw;
-        left: -15%;
+    .fq>select{
+        height: 2vh;
         width: 50vw;
     }
-    #connect>img{
-        height: 6vw;
+    .fq>label{
+        font-size: 3vw;
+    }
+    footer>h2{
+        font-size: 5vw;
+    }
+    #bottom>a{
+        font-size: 2.8vw;
+    }
+    #bottom{
+        gap: 2vw;
+    }
+    #bottom>a>img{
+        position: relative;
+        top: -10%;
+        height: 8vw;
+    }
+    footer>p{
+        position: relative;
+        top: 10%;
+        color: white;
+        font-size: 2vw;
+        padding-left: 4vw;
     }
 }

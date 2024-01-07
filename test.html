@@ -3,49 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scroll to Different Sections</title>
+    <title>Hamburger Menu</title>
     <style>
-        /* Add some styles to create sections with heights for demonstration purposes */
-        section {
-            height: 500px;
-            border: 1px solid #ccc;
-            margin-bottom: 20px;
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 16px;
+            display: block;
+        }
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar a {
+                display: none;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .menu-items {
+                display: none;
+            }
+
+            .menu-items.show {
+                display: block;
+            }
         }
     </style>
 </head>
 <body>
 
-    <section id="section1">
-        <h2>Section 1</h2>
-        <p>This is the first section.</p>
-        <a href="#section2">Scroll to Section 2</a>
-    </section>
-
-    <section id="section2">
-        <h2>Section 2</h2>
-        <p>This is the second section.</p>
-        <a href="#section3">Scroll to Section 3</a>
-    </section>
-
-    <section id="section3">
-        <h2>Section 3</h2>
-        <p>This is the third section.</p>
-    </section>
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu-items">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
 
     <script>
-        // Use JavaScript to handle smooth scrolling when clicking on anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
+        function toggleMenu() {
+            var menuItems = document.querySelector('.menu-items');
+            menuItems.classList.toggle('show');
+        }
     </script>
 
 </body>

@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif;
+}
+
+html.body{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+#scholar-header{
+    width: 100vw;
+    height: 7vw;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 15vw;
+    padding-left: 2vw;
+
+}
+#scholar-banner{
+    display: flex;
+
+}
+#scholar-banner>a>img{
+    position: relative;
+    top: -10%;
+    height: 8vw;
+}
+#scholar-banner>#line{
+    top: 5%;
+    position: relative;
+    height: 6vw;
+}
+#scholar-banner>p{
+    font-size: 2vw;
+    font-weight: 900;
+    position: relative;
+    left: 3%;
+    top: 30%;
+    color: #020C7B;
+}
+#scholar-email{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: 20px;
+    padding-left: 5vw;
+}
+#scholar-email>h3{
+    top: 7px;
+    position: relative;
+}
+#scholar-email>img{
+    height: 30px;
+    position: relative;
+    top: 4%;
+}
+#header{
+    width: 100vw;
+    height: 7vw;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 15vw;
+    padding-left: 2vw;
+
+}
+#banner{
+    display: flex;
+
+}
+#banner>img{
+    position: relative;
+    top: -10%;
+    height: 8vw;
+}
+#banner>#line{
+    top: 5%;
+    position: relative;
+    height: 6vw;
+}
+#banner>p{
+    font-size: 2vw;
+    font-weight: 900;
+    position: relative;
+    left: 3%;
+    top: 30%;
+    color: #020C7B;
+}
+#email{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: 20px;
+    padding-left: 5vw;
+}
+#email>h3{
+    top: 7px;
+    position: relative;
+}
+#email>img{
+    height: 30px;
+    position: relative;
+    top: 4%;
+}
+#offer{
+    width: 100vw;
+    height: 3vw;
+    background-color: #ff9900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+#offer>p{
+    font-size: 1.5vw;
+    font-weight: 900;
+}
+#offer>a>button{
+    height: 3vw;
+    width: 15vw;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    border: 2px solid black;
+    animation: blink 1.5s steps(1,end) infinite;
+}
+
+@media (min-width:1280px) {
+    #header{
+        display: none;
+    }
+    #offer{
+        display: none;
+    }
+}
+
+@media(max-width:786px){
+    #scholar-header{
+        display: none;
+    }
+    #header{
+        height: 8vh;
+        gap: 2vw;
+    }
+    #banner>#logo{
+        height: 8vh;
+        width: 20vw;
+        padding-top: 2vh;
+    }
+    #banner>#line{
+        height: 7vh;
+        padding-top: 1vh;
+        
+    }
+    #banner>p{
+        font-size: 3vw;
+    }
+    #email{
+        display: flex;
+        flex-direction: column;
+        padding-right: 5vw;
+        gap: 0.5vh;
+        padding-bottom: 5vh;
+    }
+    #email>img{
+        height: 2vh;
+    }
+    #h-email{
+        display: none;
+}
+#email>#info{
+    font-size: 1.5vh;
+    padding-bottom: 5vh;
+}
+#offer{
+    height: 5vh;
+    gap: 1vw;
+}
+
+#menu-line{
+    display: inline;
+    position: relative;
+    width: 8vw;
+    height: 5vh;
+    left: 2%;
+}
+#offer>p{
+    position: relative;
+    font-size: 2.5vw;
+    left: 5%;
+}
+#offer>a>button{
+    position: relative;
+    animation: none;
+    height: 3.5vh;
+    width: 25vw;
+    font-size: 3vw;
+    background-color: black;
+    color: white;
+    left: -5%;
+    animation: blink 1.5s steps(1,end) infinite;
+}
+}

@@ -25,3 +25,6 @@
 //     }
 
 // })
+
+const scholar =document.querySelector('#scholar')
+event.

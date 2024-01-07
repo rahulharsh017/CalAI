@@ -22,87 +22,386 @@ body{
 
 }
 
+
+#container{
+    height: 100vh;
+    width: 100vw;
+}
+#main{
+    position: relative;
+    display: flex;
+}
+
+#header{
+    width: 100vw;
+    height: 7vw;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 15vw;
+    padding-left: 2vw;
+
+}
+#banner{
+    display: flex;
+
+}
+#banner>img{
+    position: relative;
+    top: -10%;
+    height: 8vw;
+}
+#banner>#line{
+    top: 5%;
+    position: relative;
+    height: 6vw;
+}
+#banner>p{
+    font-size: 2vw;
+    font-weight: 900;
+    position: relative;
+    left: 3%;
+    top: 30%;
+    color: #020C7B;
+}
+#email{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: 20px;
+    padding-left: 5vw;
+}
+#email>h3{
+    top: 7px;
+    position: relative;
+}
+#email>img{
+    height: 30px;
+    position: relative;
+    top: 4%;
+}
 #nav{
-    height: 100px;
-    width: 50%;
-     background-color: black; 
+    height: 70px;
+    width: 100%;
+ background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
-    left: 27%;
-    margin-top: -10px;
+    gap: 100px;
     position: relative;
-    position: fixed;
-    z-index: 8;
+    top: 10%;
+    z-index: 200;
 }
 
 #nav>img{
-    height: 60px;
+    height: 45px;
 }
 
 #nav>a{
     color: white;
     font-weight: 100;
     text-decoration: none;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 #nav>#menu{
     height: 30px;
     display: none;
 }
 
-#container{
-    height: 100vh;
+#offer{
     width: 100vw;
+    height: 3vw;
+    background-color: #ff9900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
 }
 
-#main{
-    height: 38vw;
-    width: 30vw;
-    background-color:black ;
+#offer>p{
+    font-size: 1.5vw;
+    font-weight: 900;
+}
+#offer>a>button{
+    height: 3vw;
+    width: 15vw;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    border: 2px solid black;
+    animation: blink 1.5s steps(1,end) infinite;
+}
+form{
+    height: 100vh;
+    width: 50vw;
+    background-color:rgb(255, 255, 255) ;
     position: relative;
-    top: 16%;
-    left: 38%;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 4px;
 }
 
-#main>h2{
-    color: white;
+form>h2{
+    color: rgb(255, 138, 5);
     text-align: center;
     position: relative;
+    font-size: 2.2vw;
+    padding-top: 2vw;
+    padding-left: 3.5vw;
+    left: -2%;
+}
+
+form>input{
+    height: 2vw;
+    width: 25vw;
+    position: relative;
+    left: 20%;
+    top: 5%;
+}
+form>label{
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 5%;
+    left: 20%;
+    font-weight: 900;
+}
+form>select{
+    height: 2vw;
+    width: 25vw;
+    position: relative;
+    left: 20%;
     top: 5%;
 }
 
-#main>input{
-    height: 2vw;
-    width: 25vw;
-    position: relative;
-    left: 8%;
-    top: 10%;
-}
-#main>label{
-    color: white;
-    position: relative;
-    top: 10%;
-    left: 8%;
-}
-#main>select{
-    height: 2vw;
-    width: 25vw;
-    position: relative;
-    left: 8%;
-    top: 10%;
-}
-
-#main>button{
-    height: 2vw;
+form>button{
+    height: 3vw;
     width: 15vw;
     position: relative;
-    left: 25%;
-    top: 15%;
+    left: 32%;
+    top: 10%;
     font-weight: 900;
+    font-size: 1.5vw;
+    color: white;
+    background-color: black;
 
+}
+
+form>p{
+    position: relative;
+    top: 12%;
+    white-space: wrap;
+    padding-left: 8vw;
+    padding-right: 6vw;
+    font-size: 1vw;
+}
+#form-banner{
+    height: 100vh;
+    width: 60vw;
+    background-color: rgb(201, 201, 201);
+}
+#banner-con1{
+    position: relative;
+    display: flex;
+    top: 15%;
+}
+#banner-con1>img{
+    height: 140px;
+    padding-left: 2vw;
+}
+#banner-con1>h2{
+    position: relative;
+    font-size: 1.8vw;
+    padding-top: 4vw;
+    left: -2%;
+    color: #010D7D;
+}
+#formline{
+    position: relative;
+    left: -5%;
+}
+#form-banner>p{
+    position: relative;
+    top: 15%;
+    font-size: 1.5vw;
+    padding: 2vw;
+}
+
+#form-banner>h1{
+    color: #ff8513;
+    padding: 2vw;
+    padding-left: 3vw;
+    font-size: 3vw;
+}
+
+#image-slider{
+    position: relative;
+    top: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+#image-slider>h2{
+    position: relative;
+    left: 5%;
+    overflow-x: hidden;
+    color: rgb(3, 85, 9);
+}
+#slider{
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    gap: 2vw;
+}
+#slide-images{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    animation: slide_animation 20s infinite linear;
+}
+
+#slide-images>img{
+    height: 60px;
+}
+
+@keyframes slide_animation {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+    
+} 
+
+@media (max-width:786px) {
+    #form-banner{
+        display: none;
+    }
+    #nav{
+        display: none;
+    }
+    #header{
+        height: 8vh;
+        gap: 2vw;
+    }
+    #banner>#logo{
+        height: 8vh;
+        width: 20vw;
+        padding-top: 2vh;
+    }
+    #banner>#line{
+        height: 7vh;
+        padding-top: 1vh;
+        
+    }
+    #banner>p{
+        font-size: 3vw;
+    }
+    #email{
+        display: flex;
+        flex-direction: column;
+        padding-right: 5vw;
+        gap: 0.5vh;
+        padding-bottom: 5vh;
+    }
+    #email>img{
+        height: 2vh;
+    }
+    #h-email{
+        display: none;
+}
+#email>#info{
+    font-size: 1.5vh;
+    padding-bottom: 5vh;
+}
+#offer{
+    height: 5vh;
+    gap: 1vw;
+}
+
+#menu-line{
+    display: inline;
+    position: relative;
+    width: 8vw;
+    height: 5vh;
+    left: 2%;
+}
+#offer>p{
+    position: relative;
+    font-size: 2.5vw;
+    left: 5%;
+}
+#offer>a>button{
+    position: relative;
+    animation: none;
+    height: 3.5vh;
+    width: 25vw;
+    font-size: 3vw;
+    background-color: black;
+    color: white;
+    left: -5%;
+    animation: blink 1.5s steps(1,end) infinite;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}   
+form{
+    position: relative;
+    width: 100%;
+    left: -8%;
+}
+form>h2{
+    position: relative;
+    font-size: 6vw;
+    left: 5%;
+    top: 2%;
+}
+form>input{
+    height: 5vh;
+    width: 72vw;
+}
+form>select{
+    height: 5vh;
+    width: 72vw;
+}
+form>button{
+    height: 5vh;
+    width: 50vw;
+    font-size: 3vh;
+    position: relative;
+    left: 30%
+}
+form>p{
+    position: relative;
+    left: 5%;
+    font-size: 1.5vh;
+    padding-left: 13vw;
+    padding-right: 11vw;
+}
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+}
+
+@media (min-width:1280px) {
+    #header{
+        display: none;
+    }
+    #nav{
+        display: none;
+    }
+    #offer{
+        display: none;
+    }
 }
