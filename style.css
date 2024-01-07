@@ -96,6 +96,10 @@ body{
     z-index: 200;
 }
 
+.nav-menu{
+    display: none;
+}
+
 #nav>img{
     height: 45px;
 }
@@ -230,6 +234,8 @@ body{
     width: 8vw;
     height: 5vh;
     left: 2%;
+    background: none;
+    border: none;
 }
 #offer>p{
     position: relative;
@@ -1118,3 +1124,32 @@ footer>p{
         padding-left: 4vw;
     }
 }
+
+/* Nav Menu Toggle */
+.nav-menu.show{
+    margin-top: 2px;
+    border: none;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2vh;
+    border: solid 1px;
+    background: orange;
+    opacity: 0.9;
+    color: black;
+}
+
+.nav-menu > a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: black;
+    font-weight: 550;
+}
+
+.nav-menu > a :hover {
+   cursor: pointer;
+}
+

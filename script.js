@@ -27,4 +27,10 @@
 // })
 
 const scholar =document.querySelector('#scholar')
-event.
+
+//Nav Menu Toggler
+const navmenuToggler = document.querySelector("#menu-line");
+navmenuToggler.addEventListener("click",() => {
+    console.log("CLick");
+    document.querySelector(".nav-menu").classList.toggle("show")
+    })
