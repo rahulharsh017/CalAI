@@ -779,7 +779,7 @@ background-color: #d4d2d2;
     #page4{
         position: relative;
         top: 10%;
-        height: 113vh;
+        height: 118vh;
     }
     #page4>h1{
         font-size: 5vw;
@@ -874,7 +874,7 @@ background-color: #d4d2d2;
 @media (max-width:768px) {
     #page5{
         flex-direction: column;
-        height: 43vh;
+        height: 50vh;
         width: 100%;
     }
     #page5-con1{
