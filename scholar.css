@@ -82,21 +82,23 @@ body{
     display: flex;
 
 }
-#banner>img{
+#banner>a>img{
     position: relative;
-    top: -10%;
-    height: 8vw;
+    height: 15vw;
+    left: -10%;
+    top: 10%;
 }
 #banner>#line{
     top: 5%;
     position: relative;
     height: 6vw;
+    left: -8%;
 }
 #banner>p{
     font-size: 2vw;
     font-weight: 900;
     position: relative;
-    left: 3%;
+    left: -2%;
     top: 30%;
     color: #020C7B;
 }

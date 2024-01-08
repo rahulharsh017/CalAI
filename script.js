@@ -28,7 +28,6 @@
 
 const scholar =document.querySelector('#scholar')
 
-//Nav Menu Toggler
 const navmenuToggler = document.querySelector("#menu-line");
 navmenuToggler.addEventListener("click",() => {
     console.log("CLick");

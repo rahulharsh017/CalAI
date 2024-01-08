@@ -126,13 +126,13 @@ body{
 }
 
 #offer>p{
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: 900;
 }
 #offer>a>button{
     height: 3vw;
     width: 15vw;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: bolder;
     border: 2px solid black;
     animation: blink 1.5s steps(1,end) infinite;
@@ -239,15 +239,17 @@ body{
 }
 #offer>p{
     position: relative;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     left: 5%;
+    padding-right: 5vw;
+    font-size: 900;
 }
 #offer>a>button{
     position: relative;
     animation: none;
     height: 3.5vh;
     width: 25vw;
-    font-size: 3vw;
+    font-size: 3.5vw;
     background-color: black;
     color: white;
     left: -5%;
@@ -274,10 +276,11 @@ body{
 }
 #overlay{
     position: relative;
-top: -50%;
-    height: 101vh;
+    top: -20%;
+    height: 71%;
     width: 100vw;
     background-color: rgb(0,0, 0,0.40);
+    z-index: 2;
 }
 
 #content{
@@ -498,8 +501,32 @@ margin-bottom: 10vw;
     #m-image-slider{
         display: none;
     }
+    #overlay{
+        height: 85%;
+    }
 }
-
+@media(min-width:1366px)
+{
+    #overlay{
+        height: 71%;
+    }
+}
+@media(min-width:1440px)
+{
+    #overlay{
+        height: 84%;
+    }
+}
+@media(min-width:1920px)
+{
+    #overlay{
+        height: 82%;
+    }
+    #page1>a>button{
+        top: 30%;
+        left: 33;
+    }
+}
 #page2ext{
     width: 100vw;
     height: 18vh;
@@ -1152,4 +1179,3 @@ footer>p{
 .nav-menu > a :hover {
    cursor: pointer;
 }
-
