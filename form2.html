@@ -31,24 +31,24 @@
             <h2>AI Professionals Empowered by CalAI certifications, worked at</h2>
             <div id="slider">
                 <div id="slide-images">
-                    <img src="https://ik.imagekit.io/edtechdigit/usaii/content/images/logos/logo8.png" alt="">
-                    <img src="https://ik.imagekit.io/edtechdigit/usaii/content/images/logos/logo22.png" alt="">
-                    <img src="https://ik.imagekit.io/edtechdigit/usaii/content/images/logos/logo25.png" alt="">
-                    <img src="https://ik.imagekit.io/edtechdigit/usaii/content/images/logos/logo3.png" alt="">
-                    <img src="https://ik.imagekit.io/edtechdigit/usaii/content/images/logos/logo6.png" alt="">
-                    <img src="https://ik.imagekit.io/edtechdigit/usaii/content/images/logos/logo11.png" alt="">
-                    <img src="https://ik.imagekit.io/edtechdigit/usaii/content/images/logos/logo19.png" alt="">
-                    <img src="https://ik.imagekit.io/edtechdigit/usaii/content/images/logos/logo12.png" alt="">
+                  <img src="hplogo" alt="">
+                  <img src="techmahindra.webp" alt="">
+                  <img src="xerox.webp" alt="">
+                  <img src="codebright.webp" alt="">
+                  <img src="google.webp" alt="">
+                  <img src="intuit.webp" alt="">
+                  <img src="sap.webp" alt="">
+                  <img src="microsoft.webp" alt="">
                 </div>
                 <div id="slide-images">
-                    <img src="https://ik.imagekit.io/edtechdigit/usaii/content/images/logos/logo8.png" alt="">
-                    <img src="https://ik.imagekit.io/edtechdigit/usaii/content/images/logos/logo22.png" alt="">
-                    <img src="https://ik.imagekit.io/edtechdigit/usaii/content/images/logos/logo25.png" alt="">
-                    <img src="https://ik.imagekit.io/edtechdigit/usaii/content/images/logos/logo3.png" alt="">
-                    <img src="https://ik.imagekit.io/edtechdigit/usaii/content/images/logos/logo6.png" alt="">
-                    <img src="https://ik.imagekit.io/edtechdigit/usaii/content/images/logos/logo11.png" alt="">
-                    <img src="https://ik.imagekit.io/edtechdigit/usaii/content/images/logos/logo19.png" alt="">
-                    <img src="https://ik.imagekit.io/edtechdigit/usaii/content/images/logos/logo12.png" alt="">
+                  <img src="hplogo" alt="">
+                  <img src="techmahindra.webp" alt="">
+                  <img src="xerox.webp" alt="">
+                  <img src="codebright.webp" alt="">
+                  <img src="google.webp" alt="">
+                  <img src="intuit.webp" alt="">
+                  <img src="sap.webp" alt="">
+                  <img src="microsoft.webp" alt="">
                 </div>
                 
             </div>
@@ -98,17 +98,17 @@
     <a href="terms.html">Terms and Conditions</a>
     <a href="privacy.html">Privacy Policy</a>
 </div>
-        <form >
-        <h2>Download CalAI Brochure</h2>
-        <label for="name">Name*</label>
-        <input type="text" id="name" placeholder="Enter your Full Name" />
-        <br />
-        <label for="email">Email*</label>
-        <input type="text" placeholder="Enter Your Email" />
-        <br />
-        <label for="country">Country*</label>
-        <select name="country" id="">
-          <option value="Afghanistan">Afghanistan</option>
+<form >
+  <h2>Download CalAi Brochure</h2>
+  <label for="name">Name*</label>
+  <input type="text" id="name" placeholder="Enter your Full Name" />
+  <br />
+  <label for="email">Email*</label>
+  <input type="text" id="f-email" placeholder="Enter your email">
+  <br />
+  <label for="country">Country*</label>
+  <select name="country" id="Country">
+    <option value="Afghanistan">Afghanistan</option>
 <option value="Albania">Albania</option>
 <option value="Algeria">Algeria</option>
 <option value="American Samoa">American Samoa</option>
@@ -347,28 +347,83 @@
 <option value="Serbia">Serbia</option>
 <option value="Zambia">Zambia</option>
 <option value="Zimbabwe">Zimbabwe</option>
-        </select>
-        <br />
-        <label for="number">Phone Number*</label>
-        <input type="tel" id="phoneNumber" name="phone"  placeholder="Enter phone number" required>
-        <br />
-        <label for="Course">Course*</label>
-        <select name="Course" id="Course" aria-placeholder="Course">
-          <option value=" Artificial Intelligence Leadership Program">
-            Artificial Intelligence Leadership Program (AILP)
-          </option>
-          <option value="Artificial Intelligence Scientist (AIS)">
-             Artificial Intelligence Scientist (AIS)
-          </option>
-          <option value="Certified Artificial Intelligence Consultant (CAIC)">
-             Artificial Intelligence Consultant (AIC)
-          </option>
-        </select>
-        <button>Submit</button>
+  </select>
+  <br />
+  <label for="number">Phone Number*</label>
+  <input type="tel" id="phoneNumber" name="phone"  placeholder="Enter phone number" required>
+  <br />
+  <label for="Course">Course*</label>
+  <select name="Course" id="Course" aria-placeholder="Course">
+    <option value=" Artificial Intelligence Leadership Program">
+      Artificial Intelligence Leadership Program (AILP)
+    </option>
+    <option value="Artificial Intelligence Scientist (AIS)">
+       Artificial Intelligence Scientist (AIS)
+    </option>
+    <option value="Certified Artificial Intelligence Consultant (CAIC)">
+       Artificial Intelligence Consultant (AIC)
+    </option>
+  </select>
+  <button>Submit</button>
 <p><span style="font-weight: 900;">Note:</span> CalAI respects your privacy, and your data is 100% secured with us. We are not sharing your data with any third party vendor.</p>
-      </form>
+</form>
       </div>
     </div>
   </body>
-  <script src="script.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyC_38k6UXR8wpVDj9ZKzlD4f0VeY9VpxiQ",
+    authDomain: "calai-form.firebaseapp.com",
+    databaseURL: "https://calai-form-default-rtdb.firebaseio.com",
+    projectId: "calai-form",
+    storageBucket: "calai-form.appspot.com",
+    messagingSenderId: "1059971350900",
+    appId: "1:1059971350900:web:94b45125274aa897d9ec21",
+    measurementId: "G-MFR40JCS2S"
+  };
+  firebase.initializeApp(firebaseConfig);
+  var brochureFormDB = firebase.database().ref("BrochureForm");
+
+  const form=document.querySelector('form')
+  
+  form.addEventListener('submit',function(e){
+e.preventDefault();
+var name = getElementVal("name");
+var email = getElementVal("f-email")
+var country = getElementVal("Country")
+var phoneNumber = getElementVal("phoneNumber")
+var course=getElementVal("Course")
+var dateobj = new Date()
+let date = dateobj.toString();
+
+saveForm(name,email,country,phoneNumber,course,date)
+
+// console.log(name,email,country,phoneNumber,course);
+form.reset()
+    })
+
+
+    const saveForm = (name,email,country,phoneNumber,course,date) =>{
+        var newregisterForm = brochureFormDB.push();
+
+        newregisterForm.set({
+            name:name,
+            emailId:email,
+            Country:country,
+            PhoneNumber:phoneNumber,
+            Course:course,
+            Date:date,
+        })
+    }
+    const getElementVal = (id) => {
+        return document.getElementById(id).value;
+      };
+      const navmenuToggler = document.querySelector("#menu-line");
+navmenuToggler.addEventListener("click",() => {
+    console.log("CLick");
+    document.querySelector(".nav-menu").classList.toggle("show")
+    })
+</script>
 </html>

@@ -674,20 +674,13 @@ top: 40px;
 }
 
 .course>img{
-    height: 14.2vw;
+    height: 16vw;
     position: relative;
     left: 1px;
     top: 10px;
 }
-.course>button{
-    position: relative;
-    height: 3vw;
-    width: 10vw;
-    font-size: 1.5vw;
-    font-weight: bold;
-    background-color: black;
-    color: white;
-    border: 2px solid black;
+.course>h3{
+    font-size: 1vw;
 }
 
 .course>p{
