@@ -1086,7 +1086,7 @@ footer>h2{
 .question{
     display: flex;
     gap: 2rem;
-    height: 2vh;
+    height: 2vw;
 
 }
 .question>h3{
@@ -1099,7 +1099,8 @@ footer>h2{
 
 .answer {
 display: none;
-    font-size: 2vw;
+    font-size: 1.2vw;
+   
 }
 
 .answer p{
@@ -1144,6 +1145,10 @@ footer>p{
         
         width: 95%;
     }
+
+    .question{
+        height: 2vh;
+    }
     .question>h3{
         font-size: 1.1vh;
     }
@@ -1152,9 +1157,10 @@ footer>p{
     }
     .answer{
         display: none;
+        font-size: 1.2vh;
     }
     .answer p{
-        font-size: 1.2vw;
+        font-size: 1.2vh;
         color: rgb(0, 0, 0);
         position: relative;
     }
