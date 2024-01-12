@@ -504,6 +504,7 @@ margin-bottom: 10vw;
 
     #overlay{
         height: 50.5vw;
+        width: 100vw;
     }
 }
 
@@ -511,18 +512,21 @@ margin-bottom: 10vw;
 {
     #overlay{
         height: 33.5vw;
+        width: 100vw;
     }
     }
 @media(min-width:1440px)
 {
     #overlay{
         height: 52.7vw;
+        width: 100vw;
     }
 }
 @media(min-width:1920px)
 {
     #overlay{
         height: 49.6vw;
+        width: 100vw;
     }
     #page1>a>button{
         top: 30%;
