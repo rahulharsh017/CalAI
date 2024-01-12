@@ -277,7 +277,6 @@ body{
 #overlay{
     position: relative;
     top: -20%;
-    height: 71%;
     width: 100vw;
     background-color: rgb(0,0, 0,0.40);
     z-index: 2;
@@ -501,8 +500,9 @@ margin-bottom: 10vw;
     #m-image-slider{
         display: none;
     }
+
     #overlay{
-        height: 81%;
+        height: 81vh;
     }
 }
 @media(min-width:1366px)
@@ -514,24 +514,24 @@ margin-bottom: 10vw;
 @media(min-width:1440px)
 {
     #overlay{
-        height: 84%;
+        height: 84.3vh;
     }
 }
 @media(min-width:1920px)
 {
     #overlay{
-        height: 88%;
+        height: 88vh;
     }
     #page1>a>button{
         top: 30%;
         left: 33;
     }
-}
-   @media(min-width:2560px){
+    @media(min-width:2560px){
 #overlay{
     height: 96.5%;
 }
     }
+}
 #page2ext{
     width: 100vw;
     height: 18vh;
