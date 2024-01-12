@@ -502,7 +502,7 @@ margin-bottom: 10vw;
     }
 
     #overlay{
-        height: 81vh;
+        height: 645px;
     }
 }
 @media(min-width:1366px)
@@ -514,13 +514,13 @@ margin-bottom: 10vw;
 @media(min-width:1440px)
 {
     #overlay{
-        height: 84.3vh;
+        height: 760px;
     }
 }
 @media(min-width:1920px)
 {
     #overlay{
-        height: 88vh;
+        height: 950px;
     }
     #page1>a>button{
         top: 30%;
