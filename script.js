@@ -33,8 +33,7 @@ navmenuToggler.addEventListener("click",() => {
       answer.style.display = 'block';
       }
   }
-    
-
+   
 
 
 

@@ -194,11 +194,11 @@ body{
 }
 footer{
     width: 100vw;
-    height: 60vh;
     background-color: black;
     display: flex;
     flex-direction: column;
     gap: 2vw;
+    padding-top: 2vw;
 }
 
 footer>h2{
