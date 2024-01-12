@@ -527,6 +527,11 @@ margin-bottom: 10vw;
         left: 33;
     }
 }
+   @media(min-width:2560px){
+#overlay{
+    height: 96.5%;
+}
+    }
 #page2ext{
     width: 100vw;
     height: 18vh;
