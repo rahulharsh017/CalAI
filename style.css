@@ -502,7 +502,7 @@ margin-bottom: 10vw;
         display: none;
     }
     #overlay{
-        height: 85%;
+        height: 8%;
     }
 }
 @media(min-width:1366px)
@@ -892,6 +892,10 @@ background-color: #d4d2d2;
     color: #ffffff;
     background-color: rgb(48, 46, 46);
     border: 3px solid black;
+}
+#page5-con1>a>button:hover{
+    background-color: black;
+    scale: 130%;
 }
 #page5>img{
     position: relative;

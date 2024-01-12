@@ -6,6 +6,8 @@
     <link rel="icon" type="image/png" href="Cal ai orign.jpg">
     <title>CalAi</title>
     <link rel="stylesheet" href="formstyle.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@800&family=Jost:wght@200&family=Lora&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  </head>
 
   </head>
   <body>
@@ -366,9 +368,25 @@
         </select>
         <button>Submit</button>
 <p><span style="font-weight: 900;">Note:</span> CalAI respects your privacy, and your data is 100% secured with us. We are not sharing your data with any third party vendor.</p>
+
+
       </form>
+    
       </div>
-    </div>
+      </div>
+      <div class="thankyou">
+        <div class="t-details">
+          <div id="t-con1">
+            <img src="Cal_ai_orign-removebg-preview.png" alt="">
+          <img id ="formline" src="formline.svg" alt="">
+          <h2>California Artificial Intelligence Institute</h2>
+          </div>
+          <h2>Thanks for submitting details and our academic counselor will get in touch with you shortly.</h2>
+  <a href="index.html">
+    <button>Click here to Home</button>
+  </a>
+</div>
+      </div>
   </body>
 
   <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
@@ -399,12 +417,14 @@ var phoneNumber = getElementVal("phoneNumber")
 var course=getElementVal("Course")
 var dateobj = new Date()
 let date = dateobj.toString();
+let thankyou=document.querySelector(".thankyou")
 
 console.log(date)
 saveForm(name,email,country,phoneNumber,course,date)
 
 // console.log(name,email,country,phoneNumber,course);
 form.reset()
+thankyou.style.display="block"
     })
 
 

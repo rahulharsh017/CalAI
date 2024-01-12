@@ -9,8 +9,8 @@ font-family: 'Montserrat', sans-serif;
 }
 
 html.body{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 
 body{
@@ -234,7 +234,54 @@ form>p{
     padding-left: 3vw;
     font-size: 3vw;
 }
+.thankyou{
+    position: absolute;
+    height: 80vh;
+    width: 50vw;
+    background-color: #ffffff;
+    top: 10%;
+    left: 25%;
+    z-index: 5;
+    display: none;
+}
+.t-details{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    padding: 5VW;
+}
+.t-details>img{
+    position: relative;
+    height: 30vh;
+    width: 20vw;
+}
+.t-details>h2{
+    text-align: center;
+    font-size: 2vw;
+}
+.t-details>a>button{
+    height: 10vh;
+    width: 16vw;
+    font-size: 1.5vw;
+    background-color: #020C7B;
+    color: #ffffff;
 
+}
+#t-con1{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+}
+#t-con1>img{
+    height: 20vh;
+}
+#t-con1>h2{
+    padding-top: 4vw;
+    color: #020C7B;
+}
 #image-slider{
     position: relative;
     top: 28%;
@@ -244,7 +291,6 @@ form>p{
 }
 #image-slider>h2{
     position: relative;
-    left: 5%;
     overflow-x: hidden;
     color: rgb(3, 85, 9);
 }
@@ -410,6 +456,36 @@ form>p{
     padding-left: 13vw;
     padding-right: 11vw;
 }
+
+.thankyou{
+    width: 90%;
+    left: 5%;
+    height: 80%;
+top: 15%;
+}
+#t-con1{
+    width: 100%;
+    height: 10vh;
+}
+#t-con1>img{
+    height: 10vh;
+}
+
+#t-con1>h2{
+    font-size: 2vh;
+}
+.t-details{
+    gap: 10vh;
+}
+.t-details>h2{
+    font-size: 2vh;
+}
+.t-details>a>button{
+    height: 8vh;
+    width: 50vw;
+    font-size: 2vh;
+}
+
 @keyframes blink{
     0%{
         opacity: 1;
