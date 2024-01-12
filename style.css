@@ -275,12 +275,10 @@ body{
     background-position-y: center;
 }
 #overlay{
-    position: relative;
-    top: -20%;
-    width: 100vw;
-    height: 2vw;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 2;
+    width: 100vw;
 }
 
 #content{
@@ -501,32 +499,34 @@ margin-bottom: 10vw;
     #m-image-slider{
         display: none;
     }
-
-    #overlay{
-        height: 50.5vw;
-        width: 100vw;
-    }
+#overlay{
+    height: 61%;
+}
 }
 
 @media(min-width:1366px)
 {
     #overlay{
-        height: 33.5vw;
+        height: 100vh;
         width: 100vw;
+        top: 0%;
     }
     }
 @media(min-width:1440px)
 {
     #overlay{
-        height: 52.7vw;
-        width: 100vw;
+        height: 100%;
+    }
+}
+@media (min-width:1600px) {
+    #overlay{
+        height: 100%;
     }
 }
 @media(min-width:1920px)
 {
     #overlay{
-        height: 49.6vw;
-        width: 100vw;
+        height: 100%;
     }
     #page1>a>button{
         top: 30%;
