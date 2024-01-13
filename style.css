@@ -632,7 +632,7 @@ margin-bottom: 10vw;
 
 #page3{
     position: relative;
-    height: 118vh;
+    height: 123vh;
     width: 100vw;
   
 }
@@ -669,29 +669,41 @@ margin-bottom: 10vw;
 }
 .course{
 position: relative;
-height: 40vw;
+height: 38vw;
 width: 25vw;
 
 display: flex;
 flex-direction: column;
 align-items: center;
-gap: 20px;
+gap: 1vw;
 border: 3px solid black;
 
-top: 40px;
+top: 3vw;
 }
 
 .course>img{
     height: 16vw;
     position: relative;
     left: 1px;
-    top: 10px;
+}
+#price{
+    position: relative;
+    width: 6vw;
+    font-size: 1.5vw;
+    left: 37.8%;
+    top: -45.2%;
+    background-color: #EBCC47;
+    border: transparent;
+    padding: 1vw;
 }
 .course>h3{
+    position: relative;
     font-size: 2vw;
     color: #07126E;
     text-align: center;
     font-weight: 900;
+    top: -5vw;
+
 }
 
 .course>p{
@@ -700,6 +712,7 @@ top: 40px;
     left: 14px;
     color: black;
     font-size: 1.2vw;
+    top: -5vw;
 
 }
 #course-details{
@@ -708,6 +721,7 @@ top: 40px;
     /* background-color: #17114D; */
     position: relative;
     left: 2px;
+    top: -5vw;
 }
 #details-con1{
     display: flex;
@@ -727,7 +741,7 @@ top: 40px;
 
 .applybtn{
     position: relative;
-    top: 2%;
+    top: -5%;
 }
 .apply{
     position: relative;

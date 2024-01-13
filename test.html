@@ -3,20 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Download PDF on Form Submission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
-    <a href="https://calai.org/">
-        <button id="clickme">Click Me</button>
-    </a>
-    
-</body>
+
+<form id="myForm">
+    <!-- Your form fields go here -->
+    <button type="submit">Submit</button>
+</form>
+
+<a id="brochure" href="CalAI Brochure.pdf" download="CalAI Brochure.pdf">
+    <!-- This link is hidden by default and will be clicked programmatically -->
+</a>
+
 <script>
-    var btn=document.getElementById("clickme")
-    var c=0;
-    btn.addEventListener("click",()=>{
-        c++;
-        console.log(c)
-    })
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    // Prevent the default form submission
+    event.preventDefault();
+
+    // Simulate a click on the hidden link to trigger the download
+    document.getElementById('brochure').click();
+});
 </script>
+
+</body>
 </html>
