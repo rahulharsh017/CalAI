@@ -155,13 +155,14 @@ body{
     width: 100%;
 }
 #terms>h2{
+    margin-top: 2vw;
     font-size: 4vw;
     color: #020C7B;
-    padding: 3vw;
+    text-align: center;
 }
 
 #terms>p{
-    padding: 3vw;
+    padding: 2vw;
     font-size: 1.5vw;
 }
 #content{

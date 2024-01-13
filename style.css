@@ -71,7 +71,7 @@ body{
     display: flex;
     gap: 10px;
     position: relative;
-    top: 20px;
+    top: 2vw;
     padding-left: 5vw;
 }
 #email>h3{
@@ -211,7 +211,7 @@ body{
         flex-direction: column;
         padding-right: 5vw;
         gap: 0.5vh;
-        padding-bottom: 5vh;
+        padding-bottom: 1vh;
     }
     #email>img{
         height: 2vh;
@@ -283,8 +283,8 @@ body{
 
 #content{
     position: relative;
-    height: 250px;
-    width: 55%;
+    height: 38vh;
+    width: 50%;
     top: 25%;
     /* background-color: red; */
     display: flex;
@@ -292,7 +292,6 @@ body{
     padding-top: 5%;
     align-items: center;
     justify-content: space-around;
-    left: 25%;
     z-index: 5;
 }
 #content>img{
@@ -301,15 +300,17 @@ body{
 }
 #content>h1{
     color: white;
-    padding-left: 5vw;
     font-size: 3vw;
+    text-align: center;
+    position: relative;
+    left: 45%;
 }
 #page1>a>button{
     position: relative;
     height: 5vw;
     width: 20vw;
     top: 25%;
-    left: 35%;
+    left: 38%;
     background-color: rgb(43, 42, 42);
     color: white;
     border: 4px solid rgb(0, 0, 0);
@@ -353,6 +354,7 @@ body{
     #content>h1{
         text-align: center;
         font-size: 2vh;
+        left:4%;
     }
     #content>a>button{
         z-index: 10;
@@ -500,7 +502,8 @@ margin-bottom: 10vw;
         display: none;
     }
 #overlay{
-    height: 61%;
+    top: 0%;
+    height: 100%;
 }
 }
 
@@ -530,11 +533,6 @@ margin-bottom: 10vw;
     #page1>a>button{
         top: 30%;
         left: 33;
-    }
-    @media(min-width:2560px){
-#overlay{
-    height: 90%;
-}
     }
 }
 #page2ext{
@@ -601,7 +599,7 @@ margin-bottom: 10vw;
 }
 #con1{
     position: relative;
-    font-size: 2.8vw;
+    font-size: 2.5vw;
     width: 150vw;
     font-weight: 900;
     color: rgba(23, 17, 77, 1);
@@ -634,7 +632,7 @@ margin-bottom: 10vw;
 
 #page3{
     position: relative;
-    height: 115vh;
+    height: 118vh;
     width: 100vw;
   
 }
@@ -715,7 +713,7 @@ top: 40px;
     display: flex;
     gap: 70px;
     font-size: 1vw;
-    font-weight: 400;
+    font-weight: 900;
     color: rgb(0, 0, 0);
 }
 
@@ -759,7 +757,7 @@ transition: all 15ms;
   
 
 #page4{
-    height: 75vh;
+    height: 70vh;
     width: 100vw;
 background-color: #d4d2d2;
 }
@@ -767,7 +765,7 @@ background-color: #d4d2d2;
 #page4>h1{
     position: relative;
     width: 85%;
-    font-size: 2.5vw;
+    font-size: 3vw;
     top: 5%;
     left: 7%;
     color: #020C7B;
@@ -813,7 +811,7 @@ background-color: #d4d2d2;
 
 #break{
     width: 100vw;
-    height: 10vh;
+    height: 8vh;
 }
 @media (max-width:768px){
     #page4{
@@ -917,14 +915,13 @@ background-color: #d4d2d2;
 @media (max-width:768px) {
     #page5{
         flex-direction: column;
-        height: 50vh;
         width: 100%;
+        height: 53vw;
     }
     #page5-con1{
         position: relative;
         left: 5%;
         width: 90vw;
-        height: 100vw;
     }
     #page5-con1>h2{
         font-size: 5vw;
@@ -932,7 +929,6 @@ background-color: #d4d2d2;
     #page5-con1>ul{
         position: relative;
         font-size: 3vw;
-        top: 5%;
     }
     #page5>img{
         position: relative;
@@ -942,12 +938,26 @@ background-color: #d4d2d2;
         height: 60vh;
         top: -5%;
         padding-left: 5vw;
+        display: none;
+    }
+    .m-con{
+        color: white;
+        position: relative;
+        font-size: 4vw;
+        top: -5%;
+        padding-left: 2.5vw;
     }
     #page5-con1>a>button{
     display: none;  
     }
     
 }
+@media (min-width:1280px){
+    .m-con{
+        display: none;
+    }
+} 
+
 
 #page6{
     height: 80vh;
@@ -1008,7 +1018,6 @@ top: 10%;
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
-    gap: 1vw;
     top: 5%;
 }
 
@@ -1078,6 +1087,7 @@ footer{
     flex-direction: column;
     gap: 2vw;
     overflow: hidden;
+    height: 60vh;
 }
 
 footer>h2{
@@ -1136,20 +1146,22 @@ display: none;
 #bottom{
     position: relative;
     display: flex;
-    gap: 12vw;
     padding-left: 2vw;
-    top: 5%;
+    top: -20vw;
+    flex-direction: column;
+    left: 65%;
+    gap: 2vw;
 }
-#bottom>a>img{
+#b-logo{
     position: relative;
-    top: -10%;
-    height: 50px;
+    height: 8vw;
 }
 
 footer>p{
     position: relative;
-    top: 5%;
     color: white;
+    top: -23vw;
+    left: 1%;
 }
 @media (max-width:768px) {
     footer{
@@ -1167,11 +1179,12 @@ footer>p{
         font-size: 1.1vh;
     }
     .question>img{
-        font-size: 10vw;
+        height: 4vw;
     }
     .answer{
         display: none;
         font-size: 1.2vh;
+        padding-left: 2vw;
     }
     .answer p{
         font-size: 1.2vh;
@@ -1184,11 +1197,20 @@ footer>p{
     footer>h2{
         font-size: 5vw;
     }
-    #bottom>a{
-        font-size: 2.8vw;
-    }
     #bottom{
-        gap: 2vw;
+        display: flex;
+        flex-direction: row;
+        top: 2%;
+        left: -3%;
+        gap: 1vw;
+        align-items: center;
+        justify-content: center;
+    }
+    #bottom>P{
+        font-size: 2vw;
+    }
+    #bottom>a{
+        font-size: 2.5vw;
     }
     #bottom>a>img{
         position: relative;
@@ -1197,7 +1219,7 @@ footer>p{
     }
     footer>p{
         position: relative;
-        top: 10%;
+        top: 5%;
         color: white;
         font-size: 2vw;
         padding-left: 4vw;
