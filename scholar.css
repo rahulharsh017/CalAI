@@ -141,7 +141,7 @@ body{
     animation: blink 1.5s steps(1,end) infinite;
 }
 
-@media (min-width:1280px) {
+@media (min-width:1024px) {
     #header{
         display: none;
     }

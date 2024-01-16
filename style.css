@@ -118,7 +118,7 @@ body{
 #offer{
     width: 100vw;
     height: 3vw;
-    background-color: #ff9900;
+    background-color: #80786e;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,14 +130,20 @@ body{
     font-weight: 900;
 }
 #offer>a>button{
-    height: 3vw;
+    height: 2.5vw;
     width: 15vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: bolder;
     border: 2px solid black;
-    animation: blink 1.5s steps(1,end) infinite;
+    /* animation: blink 1.5s steps(1,end) infinite; */
+    background-color: transparent;
 }
-
+#scholar>img{
+    position: relative;
+    top: 15%;
+    height: 1.8vw;
+    padding-right: 2vw;
+}
 @media (min-width: 1024px){
     #menu-line{
         display: none;
@@ -146,7 +152,7 @@ body{
         display: none;
     }
 }
-@keyframes blink{
+/* @keyframes blink{
     0%{
         opacity: 1;
     }
@@ -156,7 +162,7 @@ body{
     100%{
         opacity: 1;
     }
-}
+} */
 
 @media (min-width: 1280px){
     #menu-line{
@@ -166,17 +172,7 @@ body{
         display: none;
     }
 }
-@keyframes blink{
-    0%{
-        opacity: 1;
-    }
-    50%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
+
 
 /* #account
 {
@@ -271,10 +267,13 @@ body{
     height: 3.5vh;
     width: 25vw;
     font-size: 3.5vw;
-    background-color: black;
-    color: white;
+    background-color: transparent;
+    color: black;
     left: -5%;
     animation: blink 1.5s steps(1,end) infinite;
+}
+#scholar>img{
+    height: 4vw;
 }
 }
  
@@ -320,16 +319,23 @@ body{
     padding-top: 1vw;
 }
 #content>h1{
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 3vw;
     text-align: center;
     position: relative;
     left: 45%;
 }
-#page1>a>button{
+.page-1-button{
+    display: flex;
+    position: relative;
+    gap: 2vw;
+    top: 10vw;
+    left: 20vw;
+}
+.page-1-button>a>button{
     position: relative;
     height: 5vw;
-    width: 20vw;
+    width: 18vw;
     top: 25%;
     left: 38%;
     background-color: rgb(43, 42, 42);
@@ -339,7 +345,7 @@ body{
     z-index: 5;
 }
 
-#page1>a>button:hover{
+.page-1-button>a>button:hover{
     background-color: black;
     scale: 120%;
     transition: all 0.5sec ease-in;
@@ -377,14 +383,16 @@ body{
         font-size: 2vh;
         left:4%;
     }
-    #content>a>button{
-        z-index: 10;
+    .m-page-1-button{
+        display: flex;
+        gap: 2vw;
+    }
+    .m-page-1-button>a>button{
         background-color: black;
         color: white;
-        width: 40vw;
-height: 3vh;
-position: relative;
-left: 5%;
+        width: 35vw;
+        height: 7vw;
+
     }
     #m-course{
         height: 55vh;

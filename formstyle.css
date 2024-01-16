@@ -295,6 +295,7 @@ form>p{
     position: relative;
     overflow-x: hidden;
     color: rgb(3, 85, 9);
+    padding-left: 1vw;
 }
 #slider{
     display: flex;
@@ -502,7 +503,7 @@ top: 15%;
 
 }
 
-@media (min-width:1280px) {
+@media (min-width:1024px) {
     #header{
         display: none;
     }

@@ -34,7 +34,6 @@
     <title>CalAi</title>
     <link rel="stylesheet" href="formstyle.css" />
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@800&family=Jost:wght@200&family=Lora&family=Montserrat:wght@500&display=swap" rel="stylesheet">
-  </head>
 
   </head>
   <body>
@@ -127,18 +126,18 @@
     <a href="terms.html">Terms and Conditions</a>
     <a href="privacy.html">Privacy Policy</a>
 </div>
-        <form >
-          <h2>Interest Form</h2>
-          <p id="sub" style="top:2%; text-align: center;">Our academic counselor will share the program details with you</p>
-        <label for="name">Name*</label>
-        <input type="text" id="name" placeholder="Enter your Full Name" />
-        <br />
-        <label for="email">Email*</label>
-        <input type="text" id="f-email" placeholder="Enter your email">
-        <br />
-        <label for="country">Country*</label>
-        <select name="country" id="Country">
-          <option value="Afghanistan">Afghanistan</option>
+<form >
+  <h2>Applicant Details</h2>
+  <p id="sub" style="top:2%; text-align: center;">We will share the scholarship test on your email at a date and time of your choice</p>
+  <label for="name">Name*</label>
+  <input type="text" id="name" placeholder="Enter your Full Name" />
+  <br />
+  <label for="email">Email*</label>
+  <input type="text" id="f-email" placeholder="Enter your email">
+  <br />
+  <label for="country">Country*</label> 
+   <select name="country" id="Country">
+    <option value="Afghanistan">Afghanistan</option>
 <option value="Albania">Albania</option>
 <option value="Algeria">Algeria</option>
 <option value="American Samoa">American Samoa</option>
@@ -377,46 +376,48 @@
 <option value="Serbia">Serbia</option>
 <option value="Zambia">Zambia</option>
 <option value="Zimbabwe">Zimbabwe</option>
-        </select>
-        <br />
-        <label for="number">Phone Number</label>
-        <input type="tel" id="phoneNumber" name="phone"  placeholder="Enter phone number" required>
-        <br />
-        <label for="Course">Course*</label>
-        <select name="Course" id="Course" aria-placeholder="Course">
-          <option value=" Artificial Intelligence Leadership Program">
-            Artificial Intelligence Leadership Program (AILP)
-          </option>
-          <option value="Artificial Intelligence Scientist (AIS)">
-             Artificial Intelligence Scientist (AIS)
-          </option>
-          <option value="Certified Artificial Intelligence Consultant (CAIC)">
-             Artificial Intelligence Consultant (AIC)
-          </option>
-        </select>
-        <button>Submit</button>
-<p><span style="font-weight: 900;">Note:</span> CalAI respects your privacy, and your data is 100% secured with us. We are not sharing your data with any third party vendor.</p>
+  </select> 
+  <br>
+  <label for="number">Phone Number</label>
+  <input type="tel" id="phoneNumber" name="phone"  placeholder="Enter phone number" required>
+  <br />
+   <!-- <label for="Course">Course*</label>
+  <select name="Course" id="Course" aria-placeholder="Course">
+    <option value=" Artificial Intelligence Leadership Program">
+      Artificial Intelligence Leadership Program (AILP)
+    </option>
+    <option value="Artificial Intelligence Scientist (AIS)">
+       Artificial Intelligence Scientist (AIS)
+    </option>
+    <option value="Certified Artificial Intelligence Consultant (CAIC)">
+       Artificial Intelligence Consultant (AIC)
+    </option>
+  </select>  -->
+  <label for="date" >Date*</label>
+  <input type="datetime-local"id="date">
+  <button type="submit" style="top: 8%;">Submit</button>
+  <br>
 
-
-      </form>
-    
+  <!-- <a id="brochure" href="CalAI Brochure.pdf" download="CalAI Brochure.pdf">
+</a> -->
+<p style="top: 8%;"><span style="font-weight: 900;">Note:</span> CalAI respects your privacy, and your data is 100% secured with us. We are not sharing your data with any third party vendor.</p>
+</form>
       </div>
-      </div>
-      <div class="thankyou">
-        <div class="t-details">
-          <div id="t-con1">
-            <img src="Cal_ai_orign-removebg-preview.png" alt="">
-          <img id ="formline" src="formline.svg" alt="">
-          <h2>California Artificial Intelligence Institute</h2>
-          </div>
-          <h2>Thank you for providing your details. Our academic counselor will contact you shortly.</h2>
-  <a href="index.html">
-    <button>Click here to Home</button>
-  </a>
+    </div>
+    <div class="thankyou">
+      <div class="t-details">
+        <div id="t-con1">
+          <img src="Cal_ai_orign-removebg-preview.png" alt="">
+        <img id ="formline" src="formline.svg" alt="">
+        <h2>California Artificial Intelligence Institute</h2>
+        </div>
+        <h2>Congratulations! Your scholarship test has been scheduled. Details will be emailed to you.</h2>
+<a href="index.html">
+  <button>Click here to Home</button>
+</a>
 </div>
-      </div>
+    </div>
   </body>
-
   <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
 <script>
@@ -431,8 +432,7 @@
     measurementId: "G-MFR40JCS2S"
   };
   firebase.initializeApp(firebaseConfig);
-
-  var registertFormDB = firebase.database().ref("registerForm");
+  var ScheduleFormDB = firebase.database().ref("ScheduleForm");
 
   const form=document.querySelector('form')
   
@@ -440,32 +440,36 @@
 e.preventDefault();
 var name = getElementVal("name");
 var email = getElementVal("f-email")
-var country = getElementVal("Country")
+ var country = getElementVal("Country")
 var phoneNumber = getElementVal("phoneNumber")
-var course=getElementVal("Course")
+var formdate = getElementVal("date")
+// var course=getElementVal("Course")
 var dateobj = new Date()
 let date = dateobj.toString();
 let thankyou=document.querySelector(".thankyou")
-
-console.log(date)
-saveForm(name,email,country,phoneNumber,course,date)
+saveForm(name,email,country,phoneNumber,date,formdate)
+// document.getElementById("brochure").click()
 
 // console.log(name,email,country,phoneNumber,course);
+console.log(formdate);
 form.reset()
-thankyou.style.display="block"
+ thankyou.style.display="block"
     })
 
 
-    const saveForm = (name,email,country,phoneNumber,course,date) =>{
-        var newregisterForm = registertFormDB.push();
+    const saveForm = (name,email,country,phoneNumber,date,formdate) =>{
+        var newregisterForm = ScheduleFormDB.push();
 
         newregisterForm.set({
             name:name,
             emailId:email,
-            Country:country,
+             Country:country,
             PhoneNumber:phoneNumber,
-            Course:course,
-            Date:date,
+            // Course:course,
+            Submissiondate:date,
+            Date:formdate,
+            
+
         })
     }
     const getElementVal = (id) => {
@@ -477,7 +481,4 @@ navmenuToggler.addEventListener("click",() => {
     document.querySelector(".nav-menu").classList.toggle("show")
     })
 </script>
-
-
-  
 </html>
