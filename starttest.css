@@ -59,7 +59,7 @@ html.body{
     gap: 10px;
     position: relative;
     top: 20px;
-    padding-left: 5vw;
+    padding-left: 2vw;
 }
 #scholar-email>h3{
     top: 7px;
@@ -87,17 +87,19 @@ html.body{
 
 }
 #test-content{
-    height: 100vh;
     width: 60vw;
-    background-color: rgb(197, 184, 184);
+    margin-top: 1vw;
 }
 #test-content>h2{
     text-align: center;
     font-size: 2vw;
+    color: #FF8A05;
+    margin-left: 5vw;
 }
 #test-content>ol{
     margin-top: 1vw;
     margin-left: 2vw;
+    font-size: 1.1vw;
 }
 #test-content>ol>li{
     display: list-item;
@@ -112,27 +114,42 @@ html.body{
 }
 #programs>h2{
     text-align: center;
+    color: #010D7D;
 }
 .course{
     height: 40vh;
     width: 40vh;
-    background-color: #ff9900;
     padding: 1vw;
     display: flex;
     flex-direction: column;
     gap: 1vw;
+    border: 2px solid black;
+    margin-top: 2vw;
+}
+.course-container{
+    display: flex;
+    margin-left: 1vw;
+    gap: 1vw;
 }
 .course>h3{
 text-align: center;
+color: #010D7D;
 }
 .course>P{
     font-size: 1vw;
 }
 #course-details{
     display: flex;
-    font-size: 1vw;
+    font-size: 0.92vw;
     gap: 2vw;
 }
+.course>button{
+    width: 5vw;
+    margin-left: 12vw;
+    background-color: #EBCC47;
+}
+
+
 #banner{
     display: flex;
 
@@ -229,6 +246,7 @@ form{
     display: flex;
     flex-direction: column;
     gap: 4px;
+    margin-top: 1vw;
 }
 
 form>h2{
@@ -236,7 +254,6 @@ form>h2{
     text-align: center;
     position: relative;
     font-size: 2.2vw;
-    padding-top: 2vw;
     padding-left: 3.5vw;
     left: -2%;
 }
@@ -381,12 +398,14 @@ form>p{
     display: flex;
     flex-direction: column;
     gap: 2vw;
+    margin-top: 5vw;
 }
 #image-slider>h2{
     position: relative;
     overflow-x: hidden;
     color: rgb(3, 85, 9);
     padding-left: 1vw;
+    font-size: 1.5vw;
 }
 #slider{
     display: flex;
@@ -402,7 +421,7 @@ form>p{
 }
 
 #slide-images>img{
-    height: 60px;
+    height: 3vw;
 }
 
 @keyframes slide_animation {
@@ -420,6 +439,12 @@ form>p{
         display: none;
     }
     #nav{
+        display: none;
+    }
+    #test-content{
+        display: none;
+    }
+    #scholar-header{
         display: none;
     }
     #header{
@@ -594,7 +619,7 @@ top: 15%;
 
 }
 
-@media (min-width:1024px) {
+@media (min-width:1024px) and (max-width:1280px) {
     #header{
         display: none;
     }
@@ -606,5 +631,54 @@ top: 15%;
     }
     .nav-menu{
         display: none;
+    }
+    .course{
+        height: 20vw;
+        width: 22vw;
+    }
+    #test-content{
+        width: 62%;
+    }
+}
+@media (min-width:1281px) {
+    #header{
+        display: none;
+    }
+    #nav{
+        display: none;
+    }
+    #offer{
+        display: none;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .course{
+        height: 32vh;
+        width: 22vw;
+    }
+    #test-content{
+        width: 62%;
+    }
+}
+@media (min-width:1366px) {
+    #header{
+        display: none;
+    }
+    #nav{
+        display: none;
+    }
+    #offer{
+        display: none;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .course{
+        height: 18vw;
+        width: 22vw;
+    }
+    #test-content{
+        width: 62%;
     }
 }
