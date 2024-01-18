@@ -41,10 +41,10 @@ html.body{
     top: -10%;
     height: 8vw;
 }
-#scholar-banner>#line{
-    top: 5%;
-    position: relative;
-    height: 6vw;
+#line{
+   width: 1px;
+   height: 7vw;
+   background-color: black;
 }
 #scholar-banner>p{
     font-size: 2vw;
@@ -70,6 +70,11 @@ html.body{
     position: relative;
     top: 4%;
 }
+.horizontal-line{
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
 #main{
     position: relative;
     display: flex;
@@ -88,7 +93,8 @@ html.body{
 }
 #test-content{
     width: 60vw;
-    margin-top: 1vw;
+    position: relative;
+    top: 1.5vw;
 }
 #test-content>h2{
     text-align: center;
@@ -114,7 +120,8 @@ html.body{
 }
 #programs>h2{
     text-align: center;
-    color: #010D7D;
+    color: #FF8A05;
+    font-size: 2vw;
 }
 .course{
     height: 40vh;
@@ -240,13 +247,13 @@ color: #010D7D;
 }
 form{
     height: 100vh;
-    width: 50vw;
-    background-color:rgb(255, 255, 255) ;
+    width: 48vw;
+    background-color:rgb(224, 223, 223) ;
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 4px;
-    margin-top: 1vw;
+    margin-left: 2vw;
 }
 
 form>h2{
@@ -256,6 +263,7 @@ form>h2{
     font-size: 2.2vw;
     padding-left: 3.5vw;
     left: -2%;
+    top: 1.5vw;
 }
 
 form>input{
@@ -290,7 +298,8 @@ form>button{
     font-weight: 900;
     font-size: 1.5vw;
     color: white;
-    background-color: black;
+    background-color: rgb(63, 61, 61) ;
+    border: none;
 
 }
 
@@ -424,6 +433,14 @@ form>p{
     height: 3vw;
 }
 
+#view-programs{
+    position: absolute;
+    background-color: #020C7B;
+    transform: rotate(270deg);
+    top: 6vw;
+    display: none;
+}
+
 @keyframes slide_animation {
     from {
         transform: translateX(0%);
@@ -545,13 +562,16 @@ form>p{
 form{
     position: relative;
     width: 100%;
-    left: -8%;
+    margin-left: 0;
+    padding-right: 25vw;
+
 }
 form>h2{
     position: relative;
     font-size: 6vw;
-    left: 5%;
+    left: 15%;
     top: 2%;
+    text-align: center;
 }
 form>input{
     height: 5vh;
@@ -563,17 +583,29 @@ form>select{
 }
 form>button{
     height: 5vh;
-    width: 50vw;
+    width: 55vw;
     font-size: 3vh;
     position: relative;
     left: 30%
 }
 form>p{
     position: relative;
-    left: 5%;
+    left: 10%;
     font-size: 1.5vh;
     padding-left: 13vw;
     padding-right: 11vw;
+}
+
+#view-programs{
+    position: absolute;
+    display: block;
+    color: #ffffff;
+    width: 38vw;
+    height: 8vw;
+    border: none;
+    margin-top: 74vw;
+    margin-left: 77vw;
+    z-index: 5;
 }
 
 .thankyou{
@@ -619,7 +651,7 @@ top: 15%;
 
 }
 
-@media (min-width:1024px) and (max-width:1280px) {
+@media (min-width:800px) and (max-width:1280px) {
     #header{
         display: none;
     }
@@ -633,14 +665,14 @@ top: 15%;
         display: none;
     }
     .course{
-        height: 20vw;
+        height: 22vw;
         width: 22vw;
     }
     #test-content{
         width: 62%;
     }
 }
-@media (min-width:1281px) {
+@media (min-width:1280px) {
     #header{
         display: none;
     }

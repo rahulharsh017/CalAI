@@ -144,7 +144,7 @@ body{
     height: 1.8vw;
     padding-right: 2vw;
 }
-@media (min-width: 1024px){
+@media (min-width: 800px){
     #menu-line{
         display: none;
     }
@@ -418,31 +418,39 @@ body{
     }
     #m-content>img{
         position: relative;
-        left: -2%;
+        margin-left: 1vw;
 height: 10vh;
     }
     #m-content>a>button{
         position: relative;
-        width: 40vw;
+        width: 25vw;
         height: 5vh;
         top: 10%;
         font-weight: 900;
         background-color: #D0A54C;
         border: none;
+        margin-left: 5vw;
+    }
+    #m-des>#m-price{
+        position: absolute;
+        height: 15vw;
+        left: -2%;
     }
     #m-des>h2{
         width: 55vw;
-        font-size: 2.2vh;
+        font-size: 1.8vh;
         color: #07126E;
+        padding-left: 10vw;
     }
     #m-des>p{
         font-size: 1.5vh;
+        padding-left: 10vw;
     }
     #m-course>button{
         position: relative;
         top: 5%;
         height: 5vh;
-        width: 60vw;
+        width: 50vw;
         font-size: 2vh;
         font-weight: bolder;
         background-color: #07126E;
@@ -482,7 +490,7 @@ margin-bottom: 10vw;
 
     #m-testimonials{
         width: 100%;
-        height: 55vh;
+        height: 125vw;
         gap: 4vw;
         display: flex;
         flex-direction: column;
@@ -519,7 +527,7 @@ margin-bottom: 10vw;
 }
   
 
-@media (min-width:1024px) {
+@media (min-width:800px) {
     #m-page1{
         display: none;
     }
@@ -806,7 +814,7 @@ height: 10vh;
 font-size: 2vw;
 transition: all 15ms;
 }
-@media (min-width:1024px) and (max-width:1280px) {
+@media (min-width:800px) and (max-width:1280px) {
     #page3{
         height: 90vh;
     }
@@ -876,7 +884,7 @@ background-color: #d4d2d2;
     width: 100vw;
     height: 8vh;
 }
-@media (min-width:1024px) and (max-width:1280px) {
+@media (min-width:800px) and (max-width:1280px) {
     #page4{
         height: 55vh;
     }
@@ -886,7 +894,7 @@ background-color: #d4d2d2;
     #page4{
         position: relative;
         top: 10%;
-        height: 122vh;
+        height: 250vw;
     }
     #page4>h1{
         font-size: 5vw;
@@ -980,7 +988,7 @@ background-color: #d4d2d2;
     width: 45vw;
     top: 1.5vw;
 }
-@media (min-width:1024px) and (max-width:1280px) {
+@media (min-width:800px) and (max-width:1280px) {
     #page5{
         height: 60vh;
     }
@@ -1101,7 +1109,7 @@ top: 10%;
     font-size: 1vw;
 }
 
-@media (min-width:1024px) and (max-width:1280px){
+@media (min-width:800px) and (max-width:1280px){
 #page6{
     height: 70vh;
 }
@@ -1149,7 +1157,7 @@ top: 10%;
     height: 5vw;
 }
 
-@media (min-width:1024px) and (max-width:1280px){
+@media (min-width:800px) and (max-width:1280px){
     #image-slider{
         height: 25vh;
     }
@@ -1254,7 +1262,7 @@ footer>p{
     top: -23vw;
     left: 1%;
 }
-@media(min-width:1024px) and (max-width:1280px){
+@media(min-width:800px) and (max-width:1280px){
     footer{
         height: 50vh;
     }
