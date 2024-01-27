@@ -386,14 +386,14 @@
         <br />
         <label for="Course">Course*</label>
         <select name="Course" id="Course" aria-placeholder="Course">
-          <option value=" Artificial Intelligence Leadership Program">
-            Artificial Intelligence Leadership Program (AILP)
+          <option value=" Generative AI Capsule">
+            Generative AI Capsule
           </option>
-          <option value="Artificial Intelligence Developer (AID)">
-             Artificial Intelligence Developer (AID)
+          <option value="Machine Learning Capsule">
+             Machine Learning Capsule
           </option>
-          <option value="Artificial Intelligence Lead (AIL)">
-             Artificial Intelligence Lead (AIL)
+          <option value="ChatGPT Prompt Engineer Capsule">
+             ChatGPT Prompt Engineer Capsule
           </option>
         </select>
         <button>Submit</button>
@@ -434,7 +434,7 @@
   };
   firebase.initializeApp(firebaseConfig);
 
-  var registertFormDB = firebase.database().ref("registerForm");
+  var MlFormDB = firebase.database().ref("MlForm");
 
   const form=document.querySelector('form')
   
@@ -459,7 +459,7 @@ thankyou.style.display="block"
 
 
     const saveForm = (name,email,country,phoneNumber,course,date) =>{
-        var newregisterForm = registertFormDB.push();
+        var newregisterForm = MlFormDB.push();
 
         newregisterForm.set({
             name:name,
