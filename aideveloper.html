@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+       <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTC7T79QV9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZTC7T79QV9');
+</script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "km9vp1ojpl");
+      </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Artificial Intelligence Developer Certification</title>
@@ -9,42 +25,63 @@
   </head>
   <body>
     <div id="container">
-      <div id="header">
-        <div id="banner">
-          <img id="logo" src="Cal_ai_orign-removebg-preview.png" alt="" />
-          <img id="line" src="Line 4.png" alt="" />
-          <p>California Artificial Intelligence Institute</p>
+        <div id="header">
+          <div id="banner">
+            <img id="logo" src="Cal_ai_orign-removebg-preview.png" alt="" />
+            <img id="line" src="Line 4.png" alt="" />
+            <p>California Artificial Intelligence Institute</p>
+          </div>
+  
+          <div id="email">
+            <img src="mail-line.svg" alt="" />
+            <h3 id="h-email">Email:</h3>
+            <h3 id="info">Info@calai.org</h3>
+          </div>
         </div>
-
-        <div id="email">
-          <img src="mail-line.svg" alt="" />
-          <h3 id="h-email">Email:</h3>
-          <h3 id="info">Info@calai.org</h3>
+        <div id="nav">
+            <a href="index.html">Home</a>
+            <a href="index.html#page3">Certifications</a>
+            <a href="index.html#page4">About</a>
+            <a href="Info@calai.org">Contact</a>
+            <a href="Brochure.html">Brochure</a>
+          <!-- <div id="account">
+              <button>Create Account</button>
+              <button>Log In</button>
+          </div> -->
         </div>
+        <div id="offer">
+          <button id="menu-line"><img src="menu-line.svg" alt=""></button>
+          <p> Get your super age AI CERTIFICATION to fuel your career </p>
+          <a href="https://1in.me/8100bsp">
+              <button id="scholar">
+                  <img src="download-2-line.svg" alt="" >Brochure</button>
+          </a>
       </div>
-      <div id="nav">
-        <a href="index.html">Home</a>
-        <a href="#page3">Certifications</a>
-        <a href="#page4">About</a>
-        <a href="Info@calai.org">Contact</a>
-        <a href="https://1in.me/8100bsp">Brochure</a>
-        <!-- <div id="account">
-            <button>Create Account</button>
-            <button>Log In</button>
-        </div> -->
+        <!-- Nav Menu Toggler Start -->
+        <div class="nav-menu">  
+            <a href="index.html">Home</a>
+            <a href="index.html#page3">Certifications</a>
+            <a href="index.html#page4">About</a>
+            <a href="Info@calai.org">Contact</a>
+            <a href="form2.html">Brochure</a>
+            <a href="terms.html">Terms and Conditions</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <!-- Nav Menu Toggler End -->
       </div>
-      <!-- Nav Menu Toggler Start -->
-      <div class="nav-menu">
-        <a href="#m-page1">Home</a>
-        <a href="#m-course">Certifications</a>
-        <a href="#page4">About</a>
-        <a href="Info@calai.org">Contact</a>
-        <a href="https://1in.me/8100bsp">Brochure</a>
-        <a href="terms.html">Terms and Conditions</a>
-        <a href="privacy.html">Privacy Policy</a>
+      <div id="m-page1">
+          <div id="content">
+  <h1>Artificial Intelligence Developer Certification</h1>
+  <div class="m-page-1-button">
+  <a href="AIS.html">
+  <button >Apply Now</button>
+  </a>
+  </div>
+  
+          </div>
+          
+      <div id="m-overlay"></div>
       </div>
-      <!-- Nav Menu Toggler End -->
-    </div>
     <div id="main">
       <div id="page1">
         <div id="content">
@@ -245,7 +282,9 @@
                     </ul>
                 </div>
             </div>
+            <a href="AIS.html">
             <button id="apply">Apply Now</button>
+        </a>
             <button id="price">Program Fee: $ 699. Limited Slots available for CalAI Scholarship Program. Hurry up and <a href="starttest.html">Apply Now!</a></button>
           </div>
       </div>
@@ -256,7 +295,7 @@
                 <li><img src="./courses-images/terminal-window-line.svg" alt=""> State-of-the-art practice codes for hands-on learning</li>
                 <li><img src="./courses-images/brain.svg" alt="">Real-world case studies from Fortune 500 companies</li>
                 <li><img src="./courses-images/books.svg" alt="">Comprehensive e-books covering each module in detail</li>
-                <li><img src="./courses-images/videos.svg" alt="">Self paced videos designed by world renowned Aritificial Intelligence Experts</li>
+                <li><img src="./courses-images/videos.svg" alt="">Self paced videos designed by world renowned AI Experts</li>
                 <li><img src="./courses-images/badge.svg" alt=""> Sharable digital Badge</li>
             </ul>
         </div>
@@ -387,6 +426,10 @@
       answer.style.display = 'block';
       }
   }
-   
+  const navmenuToggler = document.querySelector("#menu-line");
+navmenuToggler.addEventListener("click",() => {
+    console.log("CLick");
+    document.querySelector(".nav-menu").classList.toggle("show")
+    })
   </script>
 </html>

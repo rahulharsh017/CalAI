@@ -392,7 +392,7 @@ body{
 
     }
     #m-course{
-        height: 55vh;
+        height: 60vh;
         width: 100%;
         padding: 2vh;
         display: flex;
@@ -403,9 +403,19 @@ body{
         text-align: center;
         color: #07126E;
     }
+    #m-course>h2{
+        text-align: center;
+        color: #07126E;
+        margin-top: 10vw;
+    }
     #m-des{
         display: flex;
         flex-direction: column;
+    }
+    #m-des>a{
+        position: relative;
+        font-size: 4vw;
+        left: 10vw;
     }
     #m-content{
         position: relative;
@@ -463,18 +473,17 @@ height: 10vh;
         overflow-x: hidden;
         height: 16vh;
         width: 100%;
+        margin-top: 80vw;
     }
     #m-image-slider>h2{
 font-size: 4vw;
 position: relative;
 left: 3%;
-margin-bottom: 10vw;
     }
     #m-slider{
         display: flex;
         animation: slide_animation 10s infinite linear;
         position: relative;
-        top: -15%;
     }
     #m-slide-images{
         display: flex;

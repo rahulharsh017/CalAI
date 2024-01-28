@@ -111,6 +111,35 @@ body{
     height: 30px;
     display: none;
 }
+#offer{
+    width: 100vw;
+    height: 3vw;
+    background-color: #80786e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+#offer>p{
+    font-size: 2vw;
+    font-weight: 900;
+}
+#offer>a>button{
+    height: 2.5vw;
+    width: 15vw;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    border: 2px solid black;
+    /* animation: blink 1.5s steps(1,end) infinite; */
+    background-color: transparent;
+}
+#scholar>img{
+    position: relative;
+    top: 15%;
+    height: 1.8vw;
+    padding-right: 2vw;
+}
 
 #main{
     position: relative;
@@ -183,7 +212,169 @@ body{
     scale: 120%;
     transition: all 0.5sec ease-in;
 }
+.nav-menu.show{
+    margin-top: 2px;
+    border: none;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2vh;
+    border: solid 1px;
+    background: orange;
+    opacity: 0.9;
+    color: black;
+}
 
+.nav-menu > a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: black;
+    font-weight: 550;
+}
+
+.nav-menu > a :hover {
+   cursor: pointer;
+}
+@media (min-width:800px){
+    #m-page1{
+        display: none;
+    }
+    @media (min-width: 800px){
+        #menu-line{
+            display: none;
+        }
+        #m-testimonials{
+            display: none;
+        }
+    }
+    
+}
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+#nav{
+    display: none;
+}
+#header{
+    height: 8vh;
+    gap: 2vw;
+}
+#banner>#logo{
+    height: 8vh;
+    width: 20vw;
+    padding-top: 2vh;
+}
+#banner>#line{
+    height: 7vh;
+    padding-top: 1vh;
+    
+}
+#banner>p{
+    font-size: 3vw;
+}
+#email{
+    display: flex;
+    flex-direction: column;
+    padding-right: 5vw;
+    gap: 0.5vh;
+    padding-bottom: 1vh;
+}
+#email>img{
+    height: 2vh;
+}
+#h-email{
+    display: none;
+}
+#email>#info{
+font-size: 1.5vh;
+padding-bottom: 5vh;
+}
+#offer{
+height: 5vh;
+gap: 1vw;
+}
+
+#menu-line{
+display: inline;
+position: relative;
+width: 8vw;
+height: 5vh;
+left: 2%;
+background: none;
+border: none;
+}
+#offer>p{
+position: relative;
+font-size: 3.5vw;
+left: 5%;
+padding-right: 5vw;
+font-size: 900;
+}
+#offer>a>button{
+position: relative;
+animation: none;
+height: 3.5vh;
+width: 25vw;
+font-size: 3.5vw;
+background-color: transparent;
+color: black;
+left: -5%;
+animation: blink 1.5s steps(1,end) infinite;
+}
+#scholar>img{
+height: 4vw;
+}
+   #nav{
+    display: none;
+   }
+    #page1{
+        display: none;
+    }
+    #m-page1{
+        padding-top: 2vh;
+        height: 40vh;
+        background-image: url(Cal\ AI\ banner.png);
+        background-size: cover;
+        background-position-y: center;
+    }
+    #m-overlay{
+        position: relative;
+        top: -50%;
+            background-color: rgb(0,0, 0,0.40);
+            height: 42vh;
+        }
+    #content{
+        flex-direction: column;
+        z-index: 10;
+        gap: 1vh;
+        height: 10vh;
+        width: 80vw;
+        gap: 5vh;
+        padding-top: 15vh;
+        position: relative;
+        left: 8%;
+    }
+    #content>h1{
+        text-align: center;
+        font-size: 2vh;
+        left:4%;
+    }
+    .m-page-1-button{
+        display: flex;
+        gap: 2vw;
+    }
+    .m-page-1-button>a>button{
+        background-color: black;
+        color: white;
+        width: 35vw;
+        height: 7vw;
+
+    }
+}
 #page2{
     width: 100vw;
 }
@@ -283,7 +474,7 @@ color: #020C7B;
     padding-left: 3vw;
     gap: 1vw;
 }
-#modules>#apply{
+#modules>a>#apply{
     width: 15vw;
     height: 4vw;
     font-size: 1.8vw;
@@ -295,7 +486,7 @@ color: #020C7B;
     position: relative;
     top: -2vw;
 }
-#modules>#apply:hover{
+#modules>a>#apply:hover{
     transform: scale(1.2);
     transition: all 15ms;
     background-color: rgb(255, 255, 255);
@@ -307,6 +498,61 @@ color: #020C7B;
     background-color: rgb(255, 122, 74);
     font-size: 1.7vw;
     color: white;
+}
+
+@media(max-width:786px){
+    #page2{
+        width: 100%;
+    }
+    #page2>h1{
+        font-size: 4vw;
+    }
+    #overview>h1{
+        font-size: 3.5vw;
+    }
+    #overview>p{
+        font-size: 3vw;
+    }
+    #eligibility{
+        height: 36vw;
+    }
+    #eligibility>h1{
+        font-size: 3vw;
+    }
+    #eligibility>p{
+        font-size: 3vw;
+    }
+    #eligibility>h3{
+        font-size: 3vw;
+    }
+    #modules>h2{
+        font-size: 4vw;
+    }
+    .mod-odd{
+        height: 30vw;
+        width: 100%;
+    }
+    .mod-odd>h3{
+        font-size: 3vw;
+    }
+    .mod-odd>h3>span{
+        display: none;
+    }
+    .list>ul{
+        font-size: 3vw;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    #modules>a>#apply{
+        width: 28vw;
+        font-size: 3vw;
+        height: 8vw;
+    }
+    #price{
+        height: 10vw;
+        font-size: 3vw;
+      
+    }
 }
 #page3{
     width: 100vw;
@@ -330,11 +576,34 @@ color: #020C7B;
     font-size: 1.4vw;
 }
 
+
 #resources>ul>li>img{
     height: 30px;
     position: relative;
     top: 0.8vw;
-    margin-right: 1.5vw;
+    margin-right: 1vw;
+}
+
+@media(max-width:786px){
+    #page3{
+        height: 50vw;
+        width: 100%;
+    }
+    #resources>h2{
+        font-size: 4vw;
+    }
+    #resources>ul{
+        flex-wrap: nowrap;
+        font-size: 2.8vw;
+        text-align: center;
+        align-items: start;
+        justify-content: start;
+    }
+    #resources>ul>li>img{
+        position: relative;
+        height: 6vw;
+        top: 2vw;
+    }
 }
 
 footer{
@@ -419,4 +688,67 @@ footer>p{
     color: white;
     top: -23vw;
     left: 1%;
+}
+@media (max-width:768px) {
+    footer{
+        width: 100%;
+        height: 100%;
+    }
+    .Faq{
+        
+        width: 95%;
+    }
+
+    .question{
+        height: 2vh;
+    }
+    .question>h3{
+        font-size: 1.1vh;
+    }
+    .question>img{
+        height: 4vw;
+    }
+    .answer{
+        display: none;
+        font-size: 1.2vh;
+        padding-left: 2vw;
+    }
+    .answer p{
+        font-size: 1.2vh;
+        color: rgb(0, 0, 0);
+        position: relative;
+    }
+    .answer>ol>li>span{
+        font-weight: 900;
+    }
+    footer>h2{
+        font-size: 5vw;
+    }
+    #bottom{
+        display: flex;
+        flex-direction: row;
+        top: 2%;
+        left: -3%;
+        gap: 1vw;
+        align-items: center;
+        justify-content: center;
+    }
+    #bottom>P{
+        font-size: 2vw;
+    }
+    #bottom>a{
+        font-size: 2.5vw;
+    }
+    #bottom>a>img{
+        position: relative;
+        top: -10%;
+        height: 8vw;
+    }
+    footer>p{
+        position: relative;
+        top: 5%;
+        color: white;
+        font-size: 2vw;
+        padding-left: 4vw;
+    }
 }
