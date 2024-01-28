@@ -34,6 +34,7 @@
     <title>CalAi</title>
     <link rel="stylesheet" href="formstyle.css" />
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@800&family=Jost:wght@200&family=Lora&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  </head>
 
   </head>
   <body>
@@ -129,8 +130,8 @@
     <a href="privacy.html">Privacy Policy</a>
 </div>
         <form >
-        <h2>Brochure Form</h2>
-        <p id="sub" style="top:2%; text-align: center;">Our academic counselor will share the program details with you</p>
+          <h2>Interest Form</h2>
+          <p id="sub" style="top:2%; text-align: center;">Our academic counselor will share the program details with you</p>
         <label for="name">Name*</label>
         <input type="text" id="name" placeholder="Enter your Full Name" required/>
         <br />
@@ -380,10 +381,10 @@
 <option value="Zimbabwe">Zimbabwe</option>
         </select>
         <br />
-        <label for="number">Phone Number*</label>
+        <label for="number">Phone Number</label>
         <input type="tel" id="phoneNumber" name="phone"  placeholder="Enter phone number" required>
         <br />
-        <!-- <label for="Course">Course*</label>
+        <label for="Course">Course*</label>
         <select name="Course" id="Course" aria-placeholder="Course">
           <option value=" Artificial Intelligence Leadership Program">
             Artificial Intelligence Leadership Program (AILP)
@@ -394,7 +395,7 @@
           <option value="Artificial Intelligence Lead (AIL)">
              Artificial Intelligence Lead (AIL)
           </option>
-        </select> -->
+        </select>
         <button>Submit</button>
 <p><span style="font-weight: 900;">Note:</span> CalAI respects your privacy, and your data is 100% secured with us. We are not sharing your data with any third party vendor.</p>
 
@@ -403,20 +404,21 @@
     
       </div>
       </div>
-    <div class="thankyou">
-      <div class="t-details">
-        <div id="t-con1">
-          <img src="Cal_ai_orign-removebg-preview.png" alt="">
-        <img id ="formline" src="formline.svg" alt="">
-        <h2>California Artificial Intelligence Institute</h2>
-        </div>
-        <h2>Thanks for Downloading the CalAI Brochure</h2>
-<a href="index.html">
-  <button>Click here to Home</button>
-</a>
+      <div class="thankyou">
+        <div class="t-details">
+          <div id="t-con1">
+            <img src="Cal_ai_orign-removebg-preview.png" alt="">
+          <img id ="formline" src="formline.svg" alt="">
+          <h2>California Artificial Intelligence Institute</h2>
+          </div>
+          <h2>Thank you for providing your details. Our academic counselor will contact you shortly.</h2>
+  <a href="index.html">
+    <button>Click here to Home</button>
+  </a>
 </div>
-    </div>
+      </div>
   </body>
+
   <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
 <script>
@@ -431,7 +433,8 @@
     measurementId: "G-MFR40JCS2S"
   };
   firebase.initializeApp(firebaseConfig);
-  var brochureFormDB = firebase.database().ref("BrochureForm");
+
+  var registertFormDB = firebase.database().ref("registerForm");
 
   const form=document.querySelector('form')
   
@@ -445,8 +448,9 @@ var course=getElementVal("Course")
 var dateobj = new Date()
 let date = dateobj.toString();
 let thankyou=document.querySelector(".thankyou")
+
+console.log(date)
 saveForm(name,email,country,phoneNumber,course,date)
-document.getElementById("brochure").click()
 
 // console.log(name,email,country,phoneNumber,course);
 form.reset()
@@ -455,7 +459,7 @@ thankyou.style.display="block"
 
 
     const saveForm = (name,email,country,phoneNumber,course,date) =>{
-        var newregisterForm = brochureFormDB.push();
+        var newregisterForm = registertFormDB.push();
 
         newregisterForm.set({
             name:name,
@@ -475,4 +479,7 @@ navmenuToggler.addEventListener("click",() => {
     document.querySelector(".nav-menu").classList.toggle("show")
     })
 </script>
+
+
+  
 </html>

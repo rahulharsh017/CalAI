@@ -472,6 +472,7 @@ form>p{
     position: relative;
     font-size: 3vw;
     left: 5%;
+    padding-right: 2vw;
 }
 #offer>a>button{
     position: relative;
