@@ -46,6 +46,11 @@ body{
     display: flex;
 
 }
+#banner>a>img{
+    position: relative;
+    top: -10%;
+    height: 8vw;
+}
 #banner>img{
     position: relative;
     top: -10%;
@@ -107,9 +112,56 @@ body{
     text-decoration: none;
     font-size: 1.5vw;
 }
+#nav>a:hover{
+    color: #D0A54C;
+}
+#certificate>a{
+    color: white;
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+#certificate>ul{
+    background-color: #ffffff;
+    padding: 1vw;
+    position: absolute;
+    margin-top: 1vw;
+    list-style: none;
+}
+#certificate>ul>h3{
+    color: #020C7B;
+    font-size: 1.5vw;
+    padding-left: 1vw;
+}
+#certificate>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1vw;
+    text-align: center;
+    font-weight: 700;
+}
+#certificate>ul>li{
+    padding: 1vw;
+}
 #nav>#menu{
     height: 30px;
     display: none;
+}
+
+#certificate>.dropdown{
+    display: none;
+}
+#certificate>a:hover{
+    color: #D0A54C;
+}
+
+#certify:hover + .dropdown,
+.dropdown:hover {
+    display: block;
+}
+.dropdown>li:hover{
+    background-color: #d6d6d6;
+    color: white;
 }
 #offer{
     width: 100vw;
@@ -131,8 +183,20 @@ body{
     font-size: 1.5vw;
     font-weight: bolder;
     border: 2px solid black;
-    /* animation: blink 1.5s steps(1,end) infinite; */
-    background-color: transparent;
+     animation: blink 1.5s steps(1,end) infinite; 
+    background-color: black;
+    color:white;
+}
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 #scholar>img{
     position: relative;
@@ -263,7 +327,7 @@ body{
     height: 8vh;
     gap: 2vw;
 }
-#banner>#logo{
+#banner>a>#logo{
     height: 8vh;
     width: 20vw;
     padding-top: 2vh;
@@ -296,6 +360,7 @@ padding-bottom: 5vh;
 #offer{
 height: 5vh;
 gap: 1vw;
+background-color: rgb(255, 137, 27);
 }
 
 #menu-line{
@@ -315,16 +380,17 @@ padding-right: 5vw;
 font-size: 900;
 }
 #offer>a>button{
-position: relative;
-animation: none;
-height: 3.5vh;
-width: 25vw;
-font-size: 3.5vw;
-background-color: transparent;
-color: black;
-left: -5%;
-animation: blink 1.5s steps(1,end) infinite;
+    position: relative;
+    animation: none;
+    height: 3.5vh;
+    width: 25vw;
+    font-size: 3vw;
+    background-color: black;
+    color: white;
+    left: -5%;
+    animation: blink 1.5s steps(1,end) infinite;
 }
+
 #scholar>img{
 height: 4vw;
 }
@@ -574,7 +640,7 @@ color: #020C7B;
     padding: 2vw;
     display: flex;
     flex-direction: column;
-    height: 14vw;
+    height: 14.5vw;
     flex-wrap: wrap;
     gap: 1vw;
     list-style: none;
