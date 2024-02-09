@@ -36,3 +36,15 @@ const certificate = document.getElementById('certificate');
           pinSpacing: false // Disable pin spacing (optional)
         }
       });
+      
+
+      function toggleAnswer(questionId) {   
+        var answer = document.getElementById(questionId); 
+            if (answer.style.display === 'block') 
+            {
+                 answer.style.display = 'none';  
+               } 
+            else {
+         answer.style.display = 'block';
+         }
+     }
