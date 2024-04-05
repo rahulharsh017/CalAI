@@ -124,7 +124,6 @@ html.body{
     font-size: 2vw;
 }
 .course{
-    height: 40vh;
     width: 40vh;
     padding: 1vw;
     display: flex;
@@ -141,6 +140,15 @@ html.body{
 .course>h3{
 text-align: center;
 color: #010D7D;
+}
+.course>h3>a{
+    text-decoration: none;
+    color: #010D7D;
+}
+.course>h3>a>sup{
+    text-decoration: none;
+    color: #010D7D;
+    font-size: 1vw;
 }
 .course>P{
     font-size: 1vw;
@@ -707,7 +715,7 @@ top: 15%;
         display: none;
     }
     .course{
-        height: 18vw;
+        height: 19vw;
         width: 22vw;
     }
     #test-content{

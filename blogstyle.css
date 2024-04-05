@@ -292,8 +292,12 @@ height: 4vw;
 }
 .blog-description>h4{
     font-size: 1.3vw;
-    color: #020C7B;
     text-align: center;
+}
+
+.blog-description>h4>a{
+    text-decoration: none;
+    color: #020C7B;
 }
 
 .blog-description>p{
@@ -461,8 +465,10 @@ display: none;
 }
 
 @media (max-width:786px) {
+    #blog-content{
+        margin-top: 2vw;
+    }
     #blog-img{
-        margin-top: 5vw;
         height: 30vh;
     }
     #blog-menu{

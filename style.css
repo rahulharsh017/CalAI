@@ -439,7 +439,7 @@ body{
 
     }
     #m-course{
-        height: 60vh;
+        height: 15vh;
         width: 100%;
         padding: 2vh;
         display: flex;
@@ -760,7 +760,7 @@ left: 3%;
     margin-top: 3vw;
 }
 #page3-content{
-    height: 50vh;
+    height: 58vh;
     width: 80vw;
     /* background-color: red; */
     position: relative;
@@ -774,7 +774,7 @@ left: 3%;
 }
 .course{
 position: relative;
-height: 35vw;
+height: 40vw;
 width: 25vw;
 
 display: flex;
@@ -810,7 +810,10 @@ top: 3vw;
     top: -6vw;
 
 }
+.course>h3>sup{
+    font-size: 1vw;
 
+}
 .course>p{
     position: relative;
     width: 90%;
@@ -834,14 +837,16 @@ top: 3vw;
     font-size: 1vw;
     font-weight: 900;
     color: rgb(0, 0, 0);
+    text-wrap: nowrap;
 }
 
 #details-con2{
     display: flex;
-    gap: 40px;
+    gap: 60px;
     font-size: 1vw;
     color: rgb(0, 0, 0);
     font-weight: 500;
+    text-wrap: nowrap;
 }
 
 .applybtn{
@@ -863,7 +868,7 @@ top: 3vw;
     background-color: black;
     color: white;
     width: 10vw;  
-    font-size: 1.5vw; 
+    font-size: 1.3vw; 
 
 }
 

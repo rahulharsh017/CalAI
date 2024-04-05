@@ -245,11 +245,15 @@ body{
 
 #content>h1{
     color: rgb(255, 255, 255);
-    font-size: 4vw;
+    font-size: 3.5vw;
     text-align: center;
     position: relative;
     left: 45%;
     white-space: nowrap ;
+}
+
+#content>h1>sup{
+    font-size: 2.5vw;
 }
 .page-1-button{
     display: flex;
@@ -640,8 +644,7 @@ color: #020C7B;
     padding: 2vw;
     display: flex;
     flex-direction: column;
-    height: 14.5vw;
-    flex-wrap: wrap;
+    height: 17vw;
     gap: 1vw;
     list-style: none;
     font-size: 1.4vw;
