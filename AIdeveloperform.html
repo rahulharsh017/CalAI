@@ -398,7 +398,8 @@
              Artificial Intelligence Lead (AIL)
           </option>
         </select>
-        <button>Submit</button>
+        
+        <button id="Submit"><a href="https://rahul-s-site-6d46.thinkific.com/manage/courses/2734589/contents/54198303">Submit</a></button>
 <p><span style="font-weight: 900;">Note:</span> CalAI respects your privacy, and your data is 100% secured with us. We are not sharing your data with any third party vendor.</p>
 
 
@@ -419,6 +420,16 @@
   </a>
 </div>
       </div>
+      <div id="show">
+        <div id="redirect">
+          <div id="delay">
+          <p>We are redirecting you to our payments portal</p>
+          <div class="loader"></div>
+        </div>
+        </div>
+      </div>
+      
+      
   </body>
 
   <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
@@ -480,6 +491,24 @@ navmenuToggler.addEventListener("click",() => {
     console.log("CLick");
     document.querySelector(".nav-menu").classList.toggle("show")
     })
+    function delayLink(event) {
+    event.preventDefault(); // Prevent default anchor behavior
+
+  //  var loader = document.querySelector('.loader');
+    var redirect = document.querySelector('#show');
+  //  loader.style.display = 'block'; 
+    show.style.display = 'block'; // Show redirect message
+
+    // Simulate a delay (3 seconds in this case)
+    setTimeout(function() {
+      // Hide the loader after the delay
+      show.style.display = 'none';
+
+      // Redirect to the link's href
+      window.location.href = event.target.href;
+    }, 2000); // 3000 milliseconds = 3 seconds
+  }
+  document.getElementById('Submit').addEventListener('click', delayLink);
 </script>
 
 
