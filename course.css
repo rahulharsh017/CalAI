@@ -263,6 +263,24 @@ body{
     z-index: 5;
     position: fixed;
 }
+@media (min-width:1440px){
+    #applybtn{
+        top: 300px;
+        right: 80px;
+    }
+}
+@media (min-width:1920px){
+    #applybtn{
+        top: 300px;
+        right: 80px;
+    }
+}
+@media (min-width:1445px) and (max-width: 1600px){
+    #applybtn{
+        top: 300px;
+        right: 0;
+    }
+}
 #applybtn>button{
     height: 15vw;
     width: 5vw;
@@ -283,33 +301,7 @@ body{
     transition: all 0.5sec ease-in;
 }
 
-.page-1-button{
-    position: fixed;
-    z-index: 5;
-    right: 0;
-    top: 50%;
-}
 
-
-.page-1-button>a>button{
-    height: 5vw;
-    width: 18vw;
-    background-color: rgb(43, 42, 42);
-    color: white;
-    border: 4px solid rgb(0, 0, 0);
-    font-size: 2.2vw;
-    z-index: 5;
-    top: 50%;
-    right: 0;
-    transform: rotate(270deg)
-}
-
-
-.page-1-button>a>button:hover{
-    background-color: black;
-    scale: 120%;
-    transition: all 0.5sec ease-in;
-}
 .nav-menu.show{
     margin-top: 2px;
     border: none;
@@ -743,6 +735,10 @@ color: #020C7B;
         height: 6vw;
         top: 2vw;
     }
+}
+
+#apply{
+    margin-top: 2vw;
 }
 
 footer{
