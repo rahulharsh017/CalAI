@@ -238,8 +238,8 @@ body{
     display: flex;
     gap: 25px;
     padding-top: 5%;
-    align-items: center;
-    justify-content: space-around;
+     align-items: center;
+    justify-content: space-around; 
     z-index: 5;
 }
 
@@ -256,24 +256,26 @@ body{
     font-size: 2.5vw;
 }
 .page-1-button{
-    display: flex;
-    position: relative;
-    gap: 2vw;
-    top: 10vw;
-    left: 20vw;
+    position: fixed;
+    z-index: 5;
+    right: 0;
+    top: 50%;
 }
+
+
 .page-1-button>a>button{
-    position: relative;
     height: 5vw;
     width: 18vw;
-    top: 25%;
-    left: 18vw;
     background-color: rgb(43, 42, 42);
     color: white;
     border: 4px solid rgb(0, 0, 0);
     font-size: 2.2vw;
     z-index: 5;
+    top: 50%;
+    right: 0;
+    transform: rotate(270deg)
 }
+
 
 .page-1-button>a>button:hover{
     background-color: black;
@@ -319,7 +321,10 @@ body{
         }
     }
     
+    
 }
+
+    
 @media (max-width: 768px) {
     body {
         overflow-x: hidden;
@@ -545,6 +550,7 @@ color: #020C7B;
     padding-left: 3vw;
     gap: 1vw;
 }
+
 #modules>a>#apply{
     width: 15vw;
     height: 4vw;
@@ -562,6 +568,29 @@ color: #020C7B;
     transition: all 15ms;
     background-color: rgb(255, 255, 255);
     color: black;
+}
+
+#key-outcomes{
+    padding: 3vw;
+    margin-left: 3vw;
+    display: flex ;
+    flex-direction: column;
+    gap: 1vw;
+}
+#key-outcomes>h2{
+    font-size: 2.5vw;
+    color: #020C7B;
+}
+#key-outcomes>ol{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 1.4vw;
+    margin-top: 1vw;
+    padding-left: 3vw;
+    gap: 1vw;
+    list-style: square;
+
 }
 #price{
     height: 4vw;
@@ -604,7 +633,7 @@ color: #020C7B;
         font-size: 4vw;
     }
     .mod-odd{
-        height: 30vw;
+        height: 38vw;
         width: 100%;
     }
     .mod-odd>h3{
@@ -628,7 +657,15 @@ color: #020C7B;
         font-size: 3vw;
       
     }
+    #key-outcomes>h2{
+        font-size: 4vw;
+    }
+    #key-outcomes>ol{
+        font-size: 3vw;
+        width: 100vw;
+    } 
 }
+
 #page3{
     width: 100vw;
 }

@@ -444,7 +444,7 @@ body{
         padding: 2vh;
         display: flex;
         flex-direction: column;
-        gap: 2vh;
+        gap: 4vh;
     }
     #m-course>h1{
         text-align: center;
