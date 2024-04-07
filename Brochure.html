@@ -395,7 +395,8 @@
              Artificial Intelligence Lead (AIL)
           </option>
         </select> -->
-        <button>Submit</button>
+        <button onclick="startDownload()">Submit</button>
+        <a id="brochure" href="CalAI Brochure.pdf" download="CalAi Brochure.pdf"></a>
 <p><span style="font-weight: 900;">Note:</span> CalAI respects your privacy, and your data is 100% secured with us. We are not sharing your data with any third party vendor.</p>
 
 
@@ -441,12 +442,12 @@ var name = getElementVal("name");
 var email = getElementVal("f-email")
 var country = getElementVal("Country")
 var phoneNumber = getElementVal("phoneNumber")
-var course=getElementVal("Course")
+// var course=getElementVal("Course")
 var dateobj = new Date()
 let date = dateobj.toString();
 let thankyou=document.querySelector(".thankyou")
-saveForm(name,email,country,phoneNumber,course,date)
-document.getElementById("brochure").click()
+saveForm(name,email,country,phoneNumber,date)
+// document.getElementById("brochure").click()
 
 // console.log(name,email,country,phoneNumber,course);
 form.reset()
@@ -454,7 +455,7 @@ thankyou.style.display="block"
     })
 
 
-    const saveForm = (name,email,country,phoneNumber,course,date) =>{
+    const saveForm = (name,email,country,phoneNumber,date) =>{
         var newregisterForm = brochureFormDB.push();
 
         newregisterForm.set({
@@ -462,7 +463,6 @@ thankyou.style.display="block"
             emailId:email,
             Country:country,
             PhoneNumber:phoneNumber,
-            Course:course,
             Date:date,
         })
     }
@@ -474,5 +474,9 @@ navmenuToggler.addEventListener("click",() => {
     console.log("CLick");
     document.querySelector(".nav-menu").classList.toggle("show")
     })
+    function startDownload() {
+    // Trigger click event on the hidden anchor tag
+    document.getElementById('brochure').click();
+}
 </script>
 </html>

@@ -94,9 +94,55 @@ body{
     text-decoration: none;
     font-size: 1.5vw;
 }
+#nav>a:hover{
+    color: #D0A54C;
+}
+#certificate>a{
+    color: white;
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+#certificate>ul{
+    background-color: #ffffff;
+    padding: 1vw;
+    position: absolute;
+    margin-top: 1vw;
+    list-style: none;
+}
+#certificate>ul>h3{
+    color: #020C7B;
+    font-size: 1.5vw;
+    padding-left: 1vw;
+}
+#certificate>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3vw;
+    text-align: center;
+    font-weight: 700;
+}
+#certificate>ul>li{
+    padding: 1vw;
+}
 #nav>#menu{
     height: 30px;
     display: none;
+}
+#certificate>.dropdown{
+    display: none;
+}
+#certificate>a:hover{
+    color: #D0A54C;
+}
+
+#certify:hover + .dropdown,
+.dropdown:hover {
+    display: block;
+}
+.dropdown>li:hover{
+    background-color: #d6d6d6;
+    color: white;
 }
 
 #offer{
