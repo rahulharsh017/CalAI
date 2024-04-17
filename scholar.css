@@ -27,6 +27,7 @@ body{
     flex-direction: row;
     gap: 15vw;
     padding-left: 2vw;
+    border-bottom: 1px solid black;
 
 }
 #scholar-banner{
@@ -140,7 +141,142 @@ body{
     border: 2px solid black;
     animation: blink 1.5s steps(1,end) infinite;
 }
+#nav{
+    height: 70px;
+    width: 100%;
+ background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    position: relative;
+    top: 10%;
+    z-index: 200;
+}
 
+.nav-menu{
+    display: none;
+}
+
+#nav>img{
+    height: 45px;
+}
+
+#nav>a{
+    color: white;
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+#nav>a:hover{
+    color: #D0A54C;
+}
+#certificate>a{
+    color: white;
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+#certificate>ul{
+    background-color: #ffffff;
+    padding: 1vw;
+    position: absolute;
+    margin-top: 1vw;
+    list-style: none;
+}
+#certificate>ul>h3{
+    color: #020C7B;
+    font-size: 1.5vw;
+    padding-left: 1vw;
+}
+#certificate>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1vw;
+    text-align: center;
+    font-weight: 700;
+}
+#certificate>ul>li{
+    padding: 1vw;
+}
+#nav>#menu{
+    height: 30px;
+    display: none;
+}
+
+#certificate>.dropdown{
+    display: none;
+}
+#certificate>a:hover{
+    color: #D0A54C;
+}
+
+#certify:hover + .dropdown,
+.dropdown:hover {
+    display: block;
+}
+.dropdown>li:hover{
+    background-color: #d6d6d6;
+    color: white;
+}
+
+.registration-message {
+    text-align: center;
+    margin: 40px auto 20px; /* Adjust top and bottom margins */
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 30px;
+  }
+  .registration-message h2 {
+    margin-top: 0;
+    font-size: 1.5vw;
+  }
+  .registration-message p {
+    margin-bottom: 0;
+  }
+.content-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1vw;
+  }
+.payment-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .payment-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .debit-credit-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .price-total-section {
+    margin-top: 20px;
+  }
+  .price-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .total-text {
+    margin: 5px 0 0;
+  }
 @media (min-width:800px) {
     #header{
         display: none;
@@ -148,15 +284,20 @@ body{
     #offer{
         display: none;
     }
+   
 }
 
 @media(max-width:786px){
     #scholar-header{
         display: none;
     }
+    #nav{
+        display: none;
+    }
     #header{
         height: 8vh;
         gap: 2vw;
+        border-bottom: 2px solid black;
     }
     #banner>#logo{
         height: 8vh;
@@ -216,4 +357,7 @@ body{
     left: -5%;
     animation: blink 1.5s steps(1,end) infinite;
 }
+#paypal-container-HM8WK4SUU6VRE{
+    padding: 5vw;
+    }
 }
