@@ -225,22 +225,44 @@ body{
     margin: 40px auto 20px; /* Adjust top and bottom margins */
     max-width: 800px;
     background-color: #ffffff;
-    border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     line-height: 30px;
   }
   .registration-message h2 {
     margin-top: 0;
-    font-size: 1.5vw;
+    font-size: 20px;
   }
   .registration-message p {
     margin-bottom: 0;
+  }
+  @media (max-width: 800px) {
+    .registration-message {
+      line-height: 20px;
+    }
+    .registration-message h2 {
+        margin-top: -25px;
+        font-size: 20px;
+      }
+      .registration-message p {
+        margin-bottom: 0;
+        font-size: 15px;
+        margin-top: 10px;
+        padding: 15px;
+      }
+    
   }
 .content-section {
     text-align: center;
     display: flex;
     flex-direction: column;
-    font-size: 1vw;
+    font-size: 14px;
+  }
+ 
+  @media (max-width: 800px) {
+    .content-section {
+      font-size: 13px;
+    }
+    
   }
 .payment-section {
     margin-top: 20px;
@@ -316,8 +338,7 @@ body{
         display: flex;
         flex-direction: column;
         padding-right: 5vw;
-        gap: 0.5vh;
-        padding-bottom: 5vh;
+        gap:0.1px;
     }
     #email>img{
         height: 2vh;
